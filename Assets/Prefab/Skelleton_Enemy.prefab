@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1627410041170962757}
   - component: {fileID: 390755554845469842}
   - component: {fileID: 7204550555404408244}
-  - component: {fileID: -1630877298122002589}
+  - component: {fileID: 5643481060043057004}
   - component: {fileID: 7095179190925246766}
   - component: {fileID: -3355212346774030289}
+  - component: {fileID: 8225055598743464766}
   m_Layer: 0
   m_Name: Skelleton_Enemy
   m_TagString: Untagged
@@ -165,19 +166,28 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.48089504, y: 0.7865956}
   m_EdgeRadius: 0
---- !u!114 &-1630877298122002589
-MonoBehaviour:
+--- !u!95 &5643481060043057004
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8692084798164906337}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35bb780a9abcfac4d9fa4022c0c8ae05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 20
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a0d05a45c5ef4240a84f876d54cb4cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &7095179190925246766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,3 +214,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToPlayer: 100
+--- !u!114 &8225055598743464766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692084798164906337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3caca1d082b6b5e4baa465840e7fa6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  respawnPoint: {fileID: 0}
