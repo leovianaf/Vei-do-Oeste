@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -604,7 +604,7 @@ TextureImporter:
       name: sand1_21
       rect:
         serializedVersion: 2
-        x: 16
+        x: 8
         y: 8
         width: 16
         height: 16
@@ -626,7 +626,7 @@ TextureImporter:
       name: sand1_22
       rect:
         serializedVersion: 2
-        x: 48
+        x: 16
         y: 8
         width: 16
         height: 16
@@ -648,8 +648,8 @@ TextureImporter:
       name: sand1_23
       rect:
         serializedVersion: 2
-        x: 80
-        y: 8
+        x: 12
+        y: 4
         width: 16
         height: 16
       alignment: 0
@@ -697,7 +697,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -714,12 +714,12 @@ TextureImporter:
       name: sand1_26
       rect:
         serializedVersion: 2
-        x: 8
+        x: 40
         y: 8
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -736,12 +736,12 @@ TextureImporter:
       name: sand1_27
       rect:
         serializedVersion: 2
-        x: 40
+        x: 48
         y: 8
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -758,12 +758,12 @@ TextureImporter:
       name: sand1_28
       rect:
         serializedVersion: 2
-        x: 40
-        y: 0
+        x: 44
+        y: 4
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -780,12 +780,12 @@ TextureImporter:
       name: sand1_29
       rect:
         serializedVersion: 2
-        x: 48
+        x: 40
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -802,12 +802,12 @@ TextureImporter:
       name: sand1_30
       rect:
         serializedVersion: 2
-        x: 72
-        y: 8
+        x: 48
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -825,11 +825,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 72
-        y: 0
+        y: 8
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -847,11 +847,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 0
+        y: 8
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -860,6 +860,72 @@ TextureImporter:
       bones: []
       spriteID: 300748b4c565b7945909f98df15949e3
       internalID: 1016577981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand1_33
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 4
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23245e19c200194298c52c82a643113
+      internalID: 861026085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand1_34
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650dff7ef4febb64c97bc7b5fa30bd5e
+      internalID: 227863010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sand1_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aed73b693d3f8e47ac590327c2e6f1f
+      internalID: 341765150
       vertices: []
       indices: 
       edges: []
@@ -905,6 +971,11 @@ TextureImporter:
       sand1_30: -2089989546
       sand1_31: -478755409
       sand1_32: 1016577981
+      sand1_33: 861026085
+      sand1_34: 227863010
+      sand1_35: 341765150
+      sand1_36: 1606059571
+      sand1_37: -732492276
       sand1_4: 1040092289
       sand1_5: -372878439
       sand1_6: -1391425765

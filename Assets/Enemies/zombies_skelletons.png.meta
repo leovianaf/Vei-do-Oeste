@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 26fe21af94bb8b241be471f00b8cdb4a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2853126613859808978
+    second: zombies_skelletons_0
+  - first:
+      213: -6170359873595767066
+    second: zombies_skelletons_1
+  - first:
+      213: -5225510036361798983
+    second: zombies_skelletons_2
+  - first:
+      213: 3804034688359758944
+    second: zombies_skelletons_3
+  - first:
+      213: -8959810463083611546
+    second: zombies_skelletons_4
+  - first:
+      213: 6723155157917147262
+    second: zombies_skelletons_5
+  - first:
+      213: -1068980424068488897
+    second: zombies_skelletons_6
+  - first:
+      213: -8709529938797410872
+    second: zombies_skelletons_7
+  - first:
+      213: -2834294159474629067
+    second: zombies_skelletons_8
+  - first:
+      213: 6954488170636670293
+    second: zombies_skelletons_9
+  - first:
+      213: -6831624386409039945
+    second: zombies_skelletons_10
+  - first:
+      213: 1237343112881400456
+    second: zombies_skelletons_11
+  - first:
+      213: 1920628765046744024
+    second: zombies_skelletons_12
+  - first:
+      213: -3014661132512712044
+    second: zombies_skelletons_13
+  - first:
+      213: -6414539581300048570
+    second: zombies_skelletons_14
+  - first:
+      213: -7056978831161143622
+    second: zombies_skelletons_15
+  - first:
+      213: 6444542609141336978
+    second: zombies_skelletons_16
+  - first:
+      213: -6511673961132276647
+    second: zombies_skelletons_17
+  - first:
+      213: -4614894914008815674
+    second: zombies_skelletons_18
+  - first:
+      213: 2532446341123857559
+    second: zombies_skelletons_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zombies_skelletons_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 31
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6b35ee987589720800000000000000
+      internalID: 2853126613859808978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 31
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6000e036a7e5aa0800000000000000
+      internalID: -6170359873595767066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 31
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba9a60de424b77b0800000000000000
+      internalID: -5225510036361798983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 31
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c72f8f465aac430800000000000000
+      internalID: 3804034688359758944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 31
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ab21ddadb58a380800000000000000
+      internalID: -8959810463083611546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_5
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 31
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e70ac7dcef17d4d50800000000000000
+      internalID: 6723155157917147262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 31
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f312d8fc7f73a21f0800000000000000
+      internalID: -1068980424068488897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 31
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5c95d6aa8812780800000000000000
+      internalID: -8709529938797410872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 31
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536ec8b8a709aa8d0800000000000000
+      internalID: -2834294159474629067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 31
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555747d052e438060800000000000000
+      internalID: 6954488170636670293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 15
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b77139e0d13131a0800000000000000
+      internalID: -6831624386409039945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 15
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a6294610deb2110800000000000000
+      internalID: 1237343112881400456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 15
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d322069fa177aa10800000000000000
+      internalID: 1920628765046744024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_13
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 15
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a276e1ca5c926d0800000000000000
+      internalID: -3014661132512712044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_14
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 15
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d7dea8c3afaf6a0800000000000000
+      internalID: -6414539581300048570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 15
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe403d7423901e90800000000000000
+      internalID: -7056978831161143622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_16
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 15
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b0dbdbb5d9f6950800000000000000
+      internalID: 6444542609141336978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 15
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954cc8d5803e1a5a0800000000000000
+      internalID: -6511673961132276647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_18
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 15
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c76fb6c68994ffb0800000000000000
+      internalID: -4614894914008815674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zombies_skelletons_19
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 15
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cdc6f978e052320800000000000000
+      internalID: 2532446341123857559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      zombies_skelletons_0: 2853126613859808978
+      zombies_skelletons_1: -6170359873595767066
+      zombies_skelletons_10: -6831624386409039945
+      zombies_skelletons_11: 1237343112881400456
+      zombies_skelletons_12: 1920628765046744024
+      zombies_skelletons_13: -3014661132512712044
+      zombies_skelletons_14: -6414539581300048570
+      zombies_skelletons_15: -7056978831161143622
+      zombies_skelletons_16: 6444542609141336978
+      zombies_skelletons_17: -6511673961132276647
+      zombies_skelletons_18: -4614894914008815674
+      zombies_skelletons_19: 2532446341123857559
+      zombies_skelletons_2: -5225510036361798983
+      zombies_skelletons_3: 3804034688359758944
+      zombies_skelletons_4: -8959810463083611546
+      zombies_skelletons_5: 6723155157917147262
+      zombies_skelletons_6: -1068980424068488897
+      zombies_skelletons_7: -8709529938797410872
+      zombies_skelletons_8: -2834294159474629067
+      zombies_skelletons_9: 6954488170636670293
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
