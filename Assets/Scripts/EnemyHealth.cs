@@ -34,22 +34,31 @@ public class EnemyHealth : MonoBehaviour
     {
         isDead = true;
         animator.SetTrigger("Die");
+
+        if (ScoreManager.instance != null)
+        {
+            ScoreManager.instance.AddScore(1);
+        }
+
         StartCoroutine(Respawn());
     }
 
     private IEnumerator Respawn()
     {
-        float deathAnimTime = animator.GetCurrentAnimatorStateInfo(0).length;
-        float respawnWaitTime = deathAnimTime + 0.2f;
+        // Aguarda até que a animação de morte termine
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Enemy_Die") &&
+               animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        {
+            yield return null; // Espera o próximo frame
+        }
 
-        yield return new WaitForSeconds(respawnWaitTime);
+        yield return new WaitForSeconds(0.3f);
 
         transform.position = respawnPoint.position;
         currentHealth = maxHealth;
         isDead = false;
 
         IncreaseSpeed();
-
         animator.SetTrigger("Respawn");
     }
 
