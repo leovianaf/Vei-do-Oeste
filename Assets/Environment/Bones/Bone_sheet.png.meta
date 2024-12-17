@@ -1,0 +1,1531 @@
+fileFormatVersion: 2
+guid: 5bf4bf2451913b143972191993d5fb53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5885390343649305525
+    second: Bone_sheet_0
+  - first:
+      213: 2238569622742091986
+    second: Bone_sheet_1
+  - first:
+      213: 3406435777436648951
+    second: Bone_sheet_2
+  - first:
+      213: -3299484308111123336
+    second: Bone_sheet_3
+  - first:
+      213: 7840746374670631909
+    second: Bone_sheet_4
+  - first:
+      213: 2180235907295081447
+    second: Bone_sheet_5
+  - first:
+      213: 1494109274913736579
+    second: Bone_sheet_6
+  - first:
+      213: 2621637522080793618
+    second: Bone_sheet_7
+  - first:
+      213: 4493168990400926283
+    second: Bone_sheet_8
+  - first:
+      213: -3167119002199813600
+    second: Bone_sheet_9
+  - first:
+      213: -6299186933623953537
+    second: Bone_sheet_10
+  - first:
+      213: -6573482961514476550
+    second: Bone_sheet_11
+  - first:
+      213: 8674027439901001038
+    second: Bone_sheet_12
+  - first:
+      213: -3980915852432550958
+    second: Bone_sheet_13
+  - first:
+      213: 6973973302011417290
+    second: Bone_sheet_14
+  - first:
+      213: -245554630670992627
+    second: Bone_sheet_15
+  - first:
+      213: -3360061289578113310
+    second: Bone_sheet_16
+  - first:
+      213: 8261363227723141194
+    second: Bone_sheet_17
+  - first:
+      213: -4837255363676390517
+    second: Bone_sheet_18
+  - first:
+      213: -1928391631521799189
+    second: Bone_sheet_19
+  - first:
+      213: -7294968083564833767
+    second: Bone_sheet_20
+  - first:
+      213: -8007469626909449142
+    second: Bone_sheet_21
+  - first:
+      213: -3642988041891351745
+    second: Bone_sheet_22
+  - first:
+      213: 5248174243560036034
+    second: Bone_sheet_23
+  - first:
+      213: -3344939172110418010
+    second: Bone_sheet_24
+  - first:
+      213: 825715609274873267
+    second: Bone_sheet_25
+  - first:
+      213: 8501121752796421829
+    second: Bone_sheet_26
+  - first:
+      213: -7085634016860541258
+    second: Bone_sheet_27
+  - first:
+      213: 8748640534105503824
+    second: Bone_sheet_28
+  - first:
+      213: -3865677570008210465
+    second: Bone_sheet_29
+  - first:
+      213: 6344624009970531941
+    second: Bone_sheet_30
+  - first:
+      213: -338519985741194206
+    second: Bone_sheet_31
+  - first:
+      213: 524927680787094405
+    second: Bone_sheet_32
+  - first:
+      213: 9057271664923009649
+    second: Bone_sheet_33
+  - first:
+      213: 6480923944717245487
+    second: Bone_sheet_34
+  - first:
+      213: -4114543871806479527
+    second: Bone_sheet_35
+  - first:
+      213: 6429792940032116178
+    second: Bone_sheet_36
+  - first:
+      213: 8433118272597940685
+    second: Bone_sheet_37
+  - first:
+      213: -2397177953639166304
+    second: Bone_sheet_38
+  - first:
+      213: -1164015864581225708
+    second: Bone_sheet_39
+  - first:
+      213: -8656426321111643898
+    second: Bone_sheet_40
+  - first:
+      213: 2925891802908934992
+    second: Bone_sheet_41
+  - first:
+      213: 2005835245305008061
+    second: Bone_sheet_42
+  - first:
+      213: -4608446834582423768
+    second: Bone_sheet_43
+  - first:
+      213: -1399864594526186669
+    second: Bone_sheet_44
+  - first:
+      213: -6505759237314363242
+    second: Bone_sheet_45
+  - first:
+      213: 729620523116863742
+    second: Bone_sheet_46
+  - first:
+      213: -7710401928362609971
+    second: Bone_sheet_47
+  - first:
+      213: -3749320633339936807
+    second: Bone_sheet_48
+  - first:
+      213: 6832052627161119149
+    second: Bone_sheet_49
+  - first:
+      213: 3530276563471181224
+    second: Bone_sheet_50
+  - first:
+      213: -8973998993157775882
+    second: Bone_sheet_51
+  - first:
+      213: 9145781022465373652
+    second: Bone_sheet_52
+  - first:
+      213: 1408742157143685810
+    second: Bone_sheet_53
+  - first:
+      213: 7734219269515313090
+    second: Bone_sheet_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bone_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 132
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4cd4422aa4e25ea0800000000000000
+      internalID: -5885390343649305525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 132
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8c580263ff01f10800000000000000
+      internalID: 2238569622742091986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 132
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f50b40aa47164f20800000000000000
+      internalID: 3406435777436648951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 132
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c9f01d080e532d0800000000000000
+      internalID: -3299484308111123336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 132
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3cc24294defcc60800000000000000
+      internalID: 7840746374670631909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 132
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3ffdc9101c14e10800000000000000
+      internalID: 2180235907295081447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 132
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38789da28742cb410800000000000000
+      internalID: 1494109274913736579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 132
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2140671bf6de16420800000000000000
+      internalID: 2621637522080793618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 127
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b42d5a41461fa5e30800000000000000
+      internalID: 4493168990400926283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 95
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0229d703c022c04d0800000000000000
+      internalID: -3167119002199813600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 95
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77ef8fbbdac498a0800000000000000
+      internalID: -6299186933623953537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 95
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbc8d5031c46c4a0800000000000000
+      internalID: -6573482961514476550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 95
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e454a47eff5506870800000000000000
+      internalID: 8674027439901001038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 95
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d3590fbf12f0c8c0800000000000000
+      internalID: -3980915852432550958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 101
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2d27bb4c788c060800000000000000
+      internalID: 6973973302011417290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 96
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b37e94d5d979cf0800000000000000
+      internalID: -245554630670992627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 101
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6d72b3f0aae51d0800000000000000
+      internalID: -3360061289578113310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 96
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4099e4c51246a270800000000000000
+      internalID: 8261363227723141194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 101
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b373820ed9edcb0800000000000000
+      internalID: -4837255363676390517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 96
+        width: 18
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3ae47370afc35e0800000000000000
+      internalID: -1928391631521799189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 101
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9145e4bad2113ca90800000000000000
+      internalID: -7294968083564833767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 96
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44255abcc0cfd090800000000000000
+      internalID: -8007469626909449142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 69
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33f1126da1817dc0800000000000000
+      internalID: -3642988041891351745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 69
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c610c22ba245d840800000000000000
+      internalID: 5248174243560036034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 69
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afb1139b836491d0800000000000000
+      internalID: -3344939172110418010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 69
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5f258c8f7857b00800000000000000
+      internalID: 825715609274873267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 69
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ced6cb713d0af570800000000000000
+      internalID: 8501121752796421829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 69
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be6a982765caad90800000000000000
+      internalID: -7085634016860541258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 72
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05831f6a63a696970800000000000000
+      internalID: 8748640534105503824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd327773bba5a5ac0800000000000000
+      internalID: -3865677570008210465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 72
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e35bbfbe1ac0850800000000000000
+      internalID: 6344624009970531941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 45
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c9684ddd55d4bf0800000000000000
+      internalID: -338519985741194206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 40
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b951ac1fae84700800000000000000
+      internalID: 524927680787094405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 40
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17262fd7794e1bd70800000000000000
+      internalID: 9057271664923009649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 40
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2cd1358dfdd0f950800000000000000
+      internalID: 6480923944717245487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953e63cf52436e6c0800000000000000
+      internalID: -4114543871806479527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 40
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5cde9cc963b3950800000000000000
+      internalID: 6429792940032116178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 47
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc95e0b6364780570800000000000000
+      internalID: 8433118272597940685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 40
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae80f91a538bbed0800000000000000
+      internalID: -2397177953639166304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 40
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41387b60db598dfe0800000000000000
+      internalID: -1164015864581225708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 40
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6098cc9ef123ed780800000000000000
+      internalID: -8656426321111643898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 35
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0534d9bb71bda9820800000000000000
+      internalID: 2925891802908934992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 35
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf0d5a378826db10800000000000000
+      internalID: 2005835245305008061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827f07245028b00c0800000000000000
+      internalID: -4608446834582423768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353de9d619ea29ce0800000000000000
+      internalID: -1399864594526186669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 3
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69049a15176e6b5a0800000000000000
+      internalID: -6505759237314363242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 12
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef027350002202a00800000000000000
+      internalID: 729620523116863742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 6
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2b5703c462ff490800000000000000
+      internalID: -7710401928362609971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 3
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dffabcafbcb7fbc0800000000000000
+      internalID: -3749320633339936807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 12
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da976b8aaa350de50800000000000000
+      internalID: 6832052627161119149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5269c84df0ef030800000000000000
+      internalID: 3530276563471181224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd1e164673f57380800000000000000
+      internalID: -8973998993157775882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 4
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5be8d22675cee70800000000000000
+      internalID: 9145781022465373652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2babaa0378bdc8310800000000000000
+      internalID: 1408742157143685810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bone_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cff07ea277755b60800000000000000
+      internalID: 7734219269515313090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

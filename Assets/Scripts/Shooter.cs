@@ -22,7 +22,7 @@ public class Shooter : MonoBehaviour
 
     void Update()
     {
-        if (Time.time - lastShootTime >= shootCooldown && Input.GetButtonDown("Fire1"))
+        if (Time.time - lastShootTime >= shootCooldown && Input.GetKeyDown(KeyCode.J))
         {
             Shoot();
             lastShootTime = Time.time;
