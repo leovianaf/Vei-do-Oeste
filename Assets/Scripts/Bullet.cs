@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public int damage = 10;
+    public float damage = 25;
     private Animator animator;
     private bool isExploding = false;
 
@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
         EnemyHealth targetHealth = collision.gameObject.GetComponent<EnemyHealth>();
         if (targetHealth != null)
         {
-            targetHealth.TakeDamage(damage);
+            targetHealth.TakeDamage((int)damage);
             Explode();
         }
     }
@@ -55,5 +55,17 @@ public class Bullet : MonoBehaviour
 
         // Destroi o objeto ap�s a anima��o (tempo ajustado ao clipe de explos�o)
         Destroy(gameObject, 0.5f);
+    }
+
+    // Método para definir o dano da bala
+    public void SetDamage(float newDamage)
+    {
+        damage = newDamage;
+    }
+
+    // Método para obter o dano base
+    public float GetBaseDamage()
+    {
+        return 25f; // Dano padrão
     }
 }

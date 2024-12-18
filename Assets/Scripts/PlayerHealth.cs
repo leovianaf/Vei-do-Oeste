@@ -112,7 +112,7 @@ public class PlayerHealth : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    private void UpdateHealthUI()
+    public void UpdateHealthUI()
     {
         int heartsToDisplay = currentHealth / 50;
 

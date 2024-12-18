@@ -14,6 +14,9 @@ public class Shooter : MonoBehaviour
     private float lastShootTime = 0f;    // Armazena o tempo do último tiro
     public float shootDelay = 0.2f;     // Delay para a bala sair após pressionar o botão
 
+    private float damageBase = 25f; // Dano base da bala
+    private float damageBoost = 0f; // Aumento de dano temporário, começa em 0
+
     void Start()
     {
         playerMovement = GetComponent<PlayerMovement>(); // Obtem referência ao PlayerMovement
@@ -52,5 +55,41 @@ public class Shooter : MonoBehaviour
         {
             rb.linearVelocity = shootDirection * bulletSpeed;
         }
+
+        // Modifica o dano da bala com o multiplicador de dano
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        if (bulletScript != null)
+        {
+            bulletScript.SetDamage(damageBase + damageBoost);
+        }
+
+        // Calcula o ângulo da direção do disparo
+        if (shootDirection != Vector2.zero)
+        {
+            float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+
+            // Aplica a rotação à bala
+            bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        }
+
+        // Após o disparo, resetar o aumento de dano
+        ResetDamageBoost();
+    }
+
+    public void IncreaseDamage(float boostAmount)
+    {
+        damageBoost = boostAmount;
+
+        // Definir um limite para o aumento de dano
+        if (damageBoost > 25f)
+        {
+            damageBoost = 25f;
+        }
+    }
+
+    // Resetar o aumento de dano após o disparo
+    private void ResetDamageBoost()
+    {
+        damageBoost = 0f; // Reseta o aumento de dano de volta para 0
     }
 }

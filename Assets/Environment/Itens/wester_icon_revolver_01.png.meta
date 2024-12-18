@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bd9f5cc2029747b49b8344b315434ca1
+guid: 48f4cd425d80b9143ae8d0bb49e84191
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4258709372265813404
-    second: Signe__10_0
+      213: -840546075969496537
+    second: wester_icon_revolver_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Signe__10_0
+      name: wester_icon_revolver_01_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 19
+        y: 4
+        width: 91
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46a2878b36606e4c0800000000000000
-      internalID: -4258709372265813404
+      spriteID: 72a5d7c1cc7c554f0800000000000000
+      internalID: -840546075969496537
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Signe__10_0: -4258709372265813404
+      wester_icon_revolver_01_0: -840546075969496537
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
