@@ -2,15 +2,36 @@ using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
 {
-    public int damageToPlayer = 10;
+    public int damageToPlayer = 50;
+    public float damageCooldown = 1.0f;
+    private float lastDamageTime;
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-
-        if (playerHealth != null && collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            playerHealth.TakeDamage(damageToPlayer);
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            AudioSource playerAudioSource = collision.gameObject.GetComponent<AudioSource>();
+
+
+            if (playerHealth != null)
+            {
+                if (Time.time >= lastDamageTime + damageCooldown)
+                {
+                    playerHealth.TakeDamage(damageToPlayer);
+                    lastDamageTime = Time.time;
+      
+                    PlayDamageSound(playerAudioSource);
+                }
+            }
+        }
+    }
+
+    private void PlayDamageSound(AudioSource audioSource)
+    {
+        if (audioSource != null && !audioSource.isPlaying) // Evita sobreposição de sons
+        {
+            audioSource.Play();
         }
     }
 }
