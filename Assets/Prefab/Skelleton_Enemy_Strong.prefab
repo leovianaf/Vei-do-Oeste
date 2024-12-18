@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -3355212346774030289}
   - component: {fileID: 8225055598743464766}
   m_Layer: 0
-  m_Name: Skelleton_Enemy
+  m_Name: Skelleton_Enemy_Strong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -6831624386409039945, guid: 26fe21af94bb8b241be471f00b8cdb4a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9339623, g: 0.21586865, b: 0.21586865, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b7f0cbdfc3b30747838ba93b09469bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToPlayer: 50
+  damageToPlayer: 100
   damageCooldown: 1
 --- !u!114 &8225055598743464766
 MonoBehaviour:
@@ -227,4 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3caca1d082b6b5e4baa465840e7fa6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 75
+  respawnPoint: {fileID: 0}
+  speedIncreaseAmount: 1

@@ -47,7 +47,7 @@ public class EnemyMovement : MonoBehaviour
         animator.SetFloat("Horizontal", currentDirection.x);
         animator.SetFloat("Vertical", currentDirection.y);
 
-        // Muda a direcaoo apos um tempo aleatorio
+        // Muda a direcao apos um tempo aleatorio
         Invoke(nameof(ChangeDirection), Random.Range(2f, 5f));
     }
 }
