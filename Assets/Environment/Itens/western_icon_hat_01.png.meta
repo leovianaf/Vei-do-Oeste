@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      western_icon_hat_01_0: -1700548444524434365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

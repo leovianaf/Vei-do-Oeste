@@ -498,7 +498,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Windows and door_0: -405938900092808693
+      Windows and door_1: 6608356595224125359
+      Windows and door_10: 5546044495442617953
+      Windows and door_11: 688189528772126634
+      Windows and door_12: 8438122665124500445
+      Windows and door_13: -8842661295595890097
+      Windows and door_2: -1108354373143834608
+      Windows and door_3: 9045965219413394670
+      Windows and door_4: 1916007451315413484
+      Windows and door_5: -3408075305981217048
+      Windows and door_6: -4191798070398437108
+      Windows and door_7: -7703242491279393635
+      Windows and door_8: 4976470874951504449
+      Windows and door_9: 9070064625782767466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

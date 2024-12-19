@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EscalierWood_0: -5441052163298962884
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

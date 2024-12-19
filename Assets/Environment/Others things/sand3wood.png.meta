@@ -298,7 +298,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sand3wood_0: 6197488729297357857
+      sand3wood_1: -7160409784081750413
+      sand3wood_2: 4111851582885279571
+      sand3wood_3: 3945301680591268537
+      sand3wood_4: 5657179085803148751
+      sand3wood_5: -6837138280627963342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

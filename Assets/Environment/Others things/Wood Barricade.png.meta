@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wood Barricade_0: -1778230090171150016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

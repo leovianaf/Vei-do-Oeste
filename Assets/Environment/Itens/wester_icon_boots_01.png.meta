@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wester_icon_boots_01_0: -2928917649164039904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -298,7 +298,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      trucDudesert__0: 1965208313468040869
+      trucDudesert__1: -2489744993975224106
+      trucDudesert__2: 6302357227793451029
+      trucDudesert__3: 7011344998556597319
+      trucDudesert__4: -2122868593627897972
+      trucDudesert__5: -656528460497483160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

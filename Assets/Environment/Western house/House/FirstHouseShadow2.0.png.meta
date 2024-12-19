@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FirstHouseShadow2.0_0: -7482234555664367918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
