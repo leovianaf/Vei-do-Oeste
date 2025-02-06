@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Aim
+    uniqueID: 2139241847
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

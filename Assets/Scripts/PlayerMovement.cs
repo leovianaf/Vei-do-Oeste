@@ -4,7 +4,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Vector2 movement;
-    private Vector2 currentDirection = Vector2.down;
     private Rigidbody2D rb;
     private Animator animator;
 
@@ -19,38 +18,26 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        if (Mathf.Abs(horizontal) > Mathf.Abs(vertical))
+        movement = new Vector2(horizontal, vertical).normalized;
+
+        if (movement != Vector2.zero)
         {
-            movement.x = horizontal;
-            movement.y = 0;
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetBool("isMoving", true);
         }
         else
         {
-            movement.x = 0;
-            movement.y = vertical;
+            animator.SetBool("isMoving", false);
+
+            // Reseta Horizontal e Vertical para garantir que o Blend Tree volte para Idle
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", 0);
         }
-
-        movement = movement.normalized;
-
-        // Atualiza a direção se houver movimento
-        if (movement != Vector2.zero)
-        {
-            currentDirection = movement;
-        }
-
-        // Atualiza os parâmetros do Animator
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetBool("isMoving", movement != Vector2.zero);
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }
-
-    public Vector2 GetCurrentDirection()
-    {
-        return currentDirection;
     }
 }
