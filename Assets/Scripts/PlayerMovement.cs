@@ -28,7 +28,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            animator.SetBool("isMoving", false); // Garante que Idle seja ativado
+            animator.SetBool("isMoving", false);
+
+            // Reseta Horizontal e Vertical para garantir que o Blend Tree volte para Idle
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", 0);
         }
     }
 

@@ -6,7 +6,7 @@ public class MouseAim : MonoBehaviour
 
     void Start()
     {
-        Cursor.visible = false;
+        // Cursor.visible = false; // Subir com deploy para esconder mouse
         mainCamera = Camera.main;
     }
 
