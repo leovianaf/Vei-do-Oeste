@@ -6,10 +6,6 @@ public class Shooter : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float bulletSpeed = 10f;
-
-    private PlayerMovement playerMovement;
-    private Animator animator;
-
     public float shootCooldown = 0.5f;  // Tempo de cooldown entre os tiros
     private float lastShootTime = 0f;    // Armazena o tempo do último tiro
     public float shootDelay = 0.2f;     // Delay para a bala sair após pressionar o botão
@@ -17,15 +13,18 @@ public class Shooter : MonoBehaviour
     private float damageBase = 25f; // Dano base da bala
     private float damageBoost = 0f; // Aumento de dano temporário, começa em 0
 
+    private Animator animator;
+    private Camera mainCamera;
+
     void Start()
     {
-        playerMovement = GetComponent<PlayerMovement>(); // Obtem referência ao PlayerMovement
         animator = GetComponent<Animator>();
+        mainCamera = Camera.main;  // Obtém referência à câmera principal
     }
 
     void Update()
     {
-        if (Time.time - lastShootTime >= shootCooldown && Input.GetKeyDown(KeyCode.J))
+        if (Time.time - lastShootTime >= shootCooldown && Input.GetMouseButtonDown(0)) // Clique esquerdo do mouse
         {
             Shoot();
             lastShootTime = Time.time;
@@ -45,9 +44,11 @@ public class Shooter : MonoBehaviour
         // Aguarda o tempo do delay antes de instanciar a bala
         yield return new WaitForSeconds(shootDelay);
 
-        // Obtém a direção atual do movimento do jogador
-        Vector2 shootDirection = playerMovement.GetCurrentDirection();
+        // Calcula a direção do tiro baseado na posição do mouse
+        Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 shootDirection = (mousePosition - (Vector2)firePoint.position).normalized;
 
+        // Instancia a bala
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
@@ -63,14 +64,9 @@ public class Shooter : MonoBehaviour
             bulletScript.SetDamage(damageBase + damageBoost);
         }
 
-        // Calcula o ângulo da direção do disparo
-        if (shootDirection != Vector2.zero)
-        {
-            float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
-
-            // Aplica a rotação à bala
-            bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-        }
+        // Rotaciona a bala para a direção correta
+        float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+        bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
         // Após o disparo, resetar o aumento de dano
         ResetDamageBoost();
