@@ -1,8 +1,10 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public Slider slider;
     public int maxHealth = 150;
     private int currentHealth;
     private Animator animator;
@@ -12,12 +14,14 @@ public class PlayerHealth : MonoBehaviour
     private PlayerMovement playerMovement;
 
     // GameUI
-    public GameObject[] heartObjects; // Array de objetos de coração no GameUI
+    public GameObject[] heartObjects; // Array de objetos de coraï¿½ï¿½o no GameUI
     public GameObject gameOverScreen;
 
     void Start()
     {
         currentHealth = maxHealth;
+        slider.value = currentHealth;
+        slider.maxValue = maxHealth;
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
 
@@ -29,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
 
         currentHealth -= damage;
+        slider.value = currentHealth;
 
         if (currentHealth <= 0)
         {
@@ -44,6 +49,7 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
 
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
+        slider.value = currentHealth;
         UpdateHealthUI();
     }
 
@@ -53,16 +59,16 @@ public class PlayerHealth : MonoBehaviour
 
         if (remainingHearts < heartObjects.Length)
         {
-            heartObjects[remainingHearts].SetActive(false); // Desativa o coração perdido
+            heartObjects[remainingHearts].SetActive(false); // Desativa o coraï¿½ï¿½o perdido
         }
 
         if (remainingHearts <= 0)
         {
-            TriggerGameOver(); // Game Over quando perder todos os corações
+            TriggerGameOver(); // Game Over quando perder todos os coraï¿½ï¿½es
         }
         else
         {
-            Die(); // Respawn ao perder um coração
+            Die(); // Respawn ao perder um coraï¿½ï¿½o
         }
     }
 
@@ -85,14 +91,15 @@ public class PlayerHealth : MonoBehaviour
                animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
         {
             Debug.Log("Estado atual: " + animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Dies"));
-            Debug.Log("Tempo da animação: " + animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
-            yield return null; // Espera o próximo frame
+            Debug.Log("Tempo da animaï¿½ï¿½o: " + animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            yield return null; // Espera o prï¿½ximo frame
         }
 
         yield return new WaitForSeconds(0.85f);
 
         transform.position = respawnPoint.position;
-        currentHealth = Mathf.Max(currentHealth, 50); // Garantir ao menos 50 de vida após respawn
+        currentHealth = Mathf.Max(currentHealth, 50); // Garantir ao menos 50 de vida apï¿½s respawn
+        slider.value = currentHealth;
         isDead = false;
 
         animator.SetTrigger("Respawn");
