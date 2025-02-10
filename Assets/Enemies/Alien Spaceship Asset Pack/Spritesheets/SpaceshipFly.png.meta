@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 5634192123a621843b1e8319b29b8d12
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5356873915411539109
+    second: SpaceshipFly_0
+  - first:
+      213: -2390428693339267205
+    second: SpaceshipFly_1
+  - first:
+      213: 355388360534673600
+    second: SpaceshipFly_2
+  - first:
+      213: 4772095319594670128
+    second: SpaceshipFly_3
+  - first:
+      213: 7006194592982144645
+    second: SpaceshipFly_4
+  - first:
+      213: 3773000049278924853
+    second: SpaceshipFly_5
+  - first:
+      213: -2538213976512165094
+    second: SpaceshipFly_6
+  - first:
+      213: -2624043734033392388
+    second: SpaceshipFly_7
+  - first:
+      213: 3744880135890999723
+    second: SpaceshipFly_8
+  - first:
+      213: 3581901743935520457
+    second: SpaceshipFly_9
+  - first:
+      213: 8041393122497441543
+    second: SpaceshipFly_10
+  - first:
+      213: 3187747793378010598
+    second: SpaceshipFly_11
+  - first:
+      213: -293505080339153989
+    second: SpaceshipFly_12
+  - first:
+      213: -7059718332349359448
+    second: SpaceshipFly_13
+  - first:
+      213: -1493415416382632372
+    second: SpaceshipFly_14
+  - first:
+      213: -7262493580368718249
+    second: SpaceshipFly_15
+  - first:
+      213: 623057482074186154
+    second: SpaceshipFly_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpaceshipFly_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 30
+        width: 75
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bd65d4e8f88a5b0800000000000000
+      internalID: -5356873915411539109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 30
+        width: 75
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f9c98b4cd73ded0800000000000000
+      internalID: -2390428693339267205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 30
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c84afab4d79ee400800000000000000
+      internalID: 355388360534673600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_3
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 30
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0389eb6d863e93240800000000000000
+      internalID: 4772095319594670128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_4
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 30
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58696f5acd00b3160800000000000000
+      internalID: 7006194592982144645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_5
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 30
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5383dcafd836c5430800000000000000
+      internalID: 3773000049278924853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_6
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 30
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b8f0e16d376ccd0800000000000000
+      internalID: -2538213976512165094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_7
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 30
+        width: 73
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc99dd6026859bd0800000000000000
+      internalID: -2624043734033392388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_8
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 30
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9133274ac78f330800000000000000
+      internalID: 3744880135890999723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_9
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 30
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cef0ab88a875b130800000000000000
+      internalID: 3581901743935520457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_10
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 30
+        width: 75
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70faab59074c89f60800000000000000
+      internalID: 8041393122497441543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_11
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 30
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5e4d98ab72d3c20800000000000000
+      internalID: 3187747793378010598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_12
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 30
+        width: 75
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbbc9a3fa24debf0800000000000000
+      internalID: -293505080339153989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_13
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 30
+        width: 75
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aad00aa497d60e90800000000000000
+      internalID: -7059718332349359448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_14
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 30
+        width: 73
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ecb6c5792564be0800000000000000
+      internalID: -1493415416382632372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_15
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 30
+        width: 74
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75651962190763b90800000000000000
+      internalID: -7262493580368718249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceshipFly_16
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 30
+        width: 75
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa16ea59a7b85a800800000000000000
+      internalID: 623057482074186154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpaceshipFly_0: -5356873915411539109
+      SpaceshipFly_1: -2390428693339267205
+      SpaceshipFly_10: 8041393122497441543
+      SpaceshipFly_11: 3187747793378010598
+      SpaceshipFly_12: -293505080339153989
+      SpaceshipFly_13: -7059718332349359448
+      SpaceshipFly_14: -1493415416382632372
+      SpaceshipFly_15: -7262493580368718249
+      SpaceshipFly_16: 623057482074186154
+      SpaceshipFly_2: 355388360534673600
+      SpaceshipFly_3: 4772095319594670128
+      SpaceshipFly_4: 7006194592982144645
+      SpaceshipFly_5: 3773000049278924853
+      SpaceshipFly_6: -2538213976512165094
+      SpaceshipFly_7: -2624043734033392388
+      SpaceshipFly_8: 3744880135890999723
+      SpaceshipFly_9: 3581901743935520457
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
