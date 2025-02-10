@@ -6,6 +6,7 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public GameObject dialoguePanel;
+    public GameObject advanceDialogueText;
     public TextMeshProUGUI textComponent;
     public TMP_FontAsset customFont;
     public string[] lines;
@@ -18,6 +19,7 @@ public class Dialogue : MonoBehaviour
         Time.timeScale = 0f;
 
         dialoguePanel.SetActive(true);
+        advanceDialogueText.SetActive(true);
 
         textComponent.text = string.Empty;
         textComponent.font = customFont;
@@ -74,6 +76,7 @@ public class Dialogue : MonoBehaviour
     void EndDialogue() {
         gameObject.SetActive(false);
         dialoguePanel.SetActive(false);
+        advanceDialogueText.SetActive(false);
         Time.timeScale = 1f;
     }
 }
