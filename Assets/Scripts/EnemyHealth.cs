@@ -24,6 +24,7 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
+            EnemyManager.Instance.RemoveEnemy(gameObject); 
             Die();
         }
     }
@@ -37,7 +38,7 @@ public class EnemyHealth : MonoBehaviour
         {
             ScoreManager.instance.AddScore(1);
         }
-
+        
         Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length);
     }
 }
