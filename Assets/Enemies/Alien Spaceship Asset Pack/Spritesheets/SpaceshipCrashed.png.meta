@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpaceshipCrashed_0: -395331702186000431
+      SpaceshipCrashed_1: -6324264470237367110
+      SpaceshipCrashed_10: -7594259514452199524
+      SpaceshipCrashed_11: 4694178923922109065
+      SpaceshipCrashed_12: -8370624036314337265
+      SpaceshipCrashed_13: 7452936956111100157
+      SpaceshipCrashed_14: 6571028263874474986
+      SpaceshipCrashed_15: -4516591436729112429
+      SpaceshipCrashed_2: 8577426377502318866
+      SpaceshipCrashed_3: 361427509787591057
+      SpaceshipCrashed_4: -1997189384021248414
+      SpaceshipCrashed_5: 3329242827866164461
+      SpaceshipCrashed_6: 8329303844610157403
+      SpaceshipCrashed_7: -3623340162733251806
+      SpaceshipCrashed_8: 5449201176537058698
+      SpaceshipCrashed_9: 1396496337920422503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

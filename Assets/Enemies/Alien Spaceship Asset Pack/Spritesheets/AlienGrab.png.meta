@@ -547,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AlienGrab_0: 4775398466834468174
+      AlienGrab_1: -8277561762471312912
+      AlienGrab_10: 4908738837142883721
+      AlienGrab_11: -6723870817815643083
+      AlienGrab_12: 7550733220419760725
+      AlienGrab_13: -3654126727119144301
+      AlienGrab_14: -7127090172808902033
+      AlienGrab_15: 1213124456479423950
+      AlienGrab_16: -3707085536184266619
+      AlienGrab_2: -924608251658597397
+      AlienGrab_3: 8017622732476846052
+      AlienGrab_4: -4935499567411052537
+      AlienGrab_5: 4574194893866103595
+      AlienGrab_6: -8332919778150835109
+      AlienGrab_7: -469533034589374044
+      AlienGrab_8: -4968900523788609134
+      AlienGrab_9: -8185063108765110054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
