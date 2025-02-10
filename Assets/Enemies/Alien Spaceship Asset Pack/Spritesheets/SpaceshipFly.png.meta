@@ -547,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpaceshipFly_0: -5356873915411539109
+      SpaceshipFly_1: -2390428693339267205
+      SpaceshipFly_10: 8041393122497441543
+      SpaceshipFly_11: 3187747793378010598
+      SpaceshipFly_12: -293505080339153989
+      SpaceshipFly_13: -7059718332349359448
+      SpaceshipFly_14: -1493415416382632372
+      SpaceshipFly_15: -7262493580368718249
+      SpaceshipFly_16: 623057482074186154
+      SpaceshipFly_2: 355388360534673600
+      SpaceshipFly_3: 4772095319594670128
+      SpaceshipFly_4: 7006194592982144645
+      SpaceshipFly_5: 3773000049278924853
+      SpaceshipFly_6: -2538213976512165094
+      SpaceshipFly_7: -2624043734033392388
+      SpaceshipFly_8: 3744880135890999723
+      SpaceshipFly_9: 3581901743935520457
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

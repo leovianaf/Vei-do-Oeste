@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AlienWalk_0: 7074531794096970146
+      AlienWalk_1: -6371486810102900650
+      AlienWalk_2: 4545669954510198953
+      AlienWalk_3: -8190904490564156790
+      AlienWalk_4: -4304244783118884569
+      AlienWalk_5: -8816246062246616323
+      AlienWalk_6: -2084565068522879237
+      AlienWalk_7: 8861411653099551484
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

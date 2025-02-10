@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpaceshipFly-export14_0: -4830492194423024604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

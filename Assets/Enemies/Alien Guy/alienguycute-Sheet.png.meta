@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alienguycute-Sheet_0: 204559672305204795
+      alienguycute-Sheet_1: -8923135104043585111
+      alienguycute-Sheet_10: -8273833829836619694
+      alienguycute-Sheet_11: 1535511695250800619
+      alienguycute-Sheet_12: -4849212183049812374
+      alienguycute-Sheet_13: 7200277256742316833
+      alienguycute-Sheet_14: 1722403976520048609
+      alienguycute-Sheet_2: -2648033226653679588
+      alienguycute-Sheet_3: 2821250590077409767
+      alienguycute-Sheet_4: 6856833249231086186
+      alienguycute-Sheet_5: -6686910475893910034
+      alienguycute-Sheet_6: -3245270921127932933
+      alienguycute-Sheet_7: -8340246961379613437
+      alienguycute-Sheet_8: 4541511142429636624
+      alienguycute-Sheet_9: 4917020564613673908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AlienFalling_0: -7035747830577502304
+      AlienFalling_1: -4085213131798341547
+      AlienFalling_10: -6254416062762885549
+      AlienFalling_11: -6511564665153784451
+      AlienFalling_12: -7782400936770681078
+      AlienFalling_13: 3989827533496258967
+      AlienFalling_14: -4181059771374385152
+      AlienFalling_2: 3135686102216008678
+      AlienFalling_3: 1330329826517232091
+      AlienFalling_4: 3082893209661739235
+      AlienFalling_5: 2757686790466196094
+      AlienFalling_6: -2564770820079068036
+      AlienFalling_7: 450599338459795938
+      AlienFalling_8: -21848275354321842
+      AlienFalling_9: 1602349911789120744
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

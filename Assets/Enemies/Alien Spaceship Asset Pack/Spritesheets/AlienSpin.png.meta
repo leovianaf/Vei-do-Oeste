@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AlienSpin_0: -7182875014703760939
+      AlienSpin_1: 7803455956456664398
+      AlienSpin_2: -6847393275967351878
+      AlienSpin_3: -4678762017163036091
+      AlienSpin_4: 472612998262512091
+      AlienSpin_5: 7849946617736679501
+      AlienSpin_6: 4641729855790271185
+      AlienSpin_7: -2333752038293567261
+      AlienSpin_8: 6703384920855048681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
