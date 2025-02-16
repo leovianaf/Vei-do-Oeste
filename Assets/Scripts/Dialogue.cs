@@ -53,7 +53,7 @@ public class Dialogue : MonoBehaviour
     {
         foreach (char c in lines[currentLineIndex].ToCharArray())
         {
-            Debug.Log(c);
+            // Debug.Log(c);
             textComponent.text += c;
             yield return new WaitForSecondsRealtime(textSpeed);
         }

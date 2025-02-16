@@ -9,12 +9,14 @@ public class EnemyHealth : MonoBehaviour
     private bool isDead = false;
 
     private EnemyMovement enemyMovement;
+    private Collider2D enemyCollider;
 
     void Start()
     {
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         enemyMovement = GetComponent<EnemyMovement>();
+        enemyCollider = GetComponent<Collider2D>();
     }
 
     public void TakeDamage(int damage)
@@ -38,7 +40,17 @@ public class EnemyHealth : MonoBehaviour
         {
             ScoreManager.instance.AddScore(1);
         }
-        
+
+        if (enemyCollider != null)
+        {
+            enemyCollider.enabled = false;
+        }
+
         Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length);
+    }
+
+    public bool IsDead()
+    {
+        return isDead;
     }
 }

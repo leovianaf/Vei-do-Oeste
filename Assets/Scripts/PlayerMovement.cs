@@ -1,20 +1,33 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 4f;
     private Vector2 movement;
     private Rigidbody2D rb;
     private Animator animator;
+    private bool isStunned = false;
+
+    private SpriteRenderer spriteRenderer;
+    private Color originalColor;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (spriteRenderer != null)
+        {
+            originalColor = spriteRenderer.color; // Salva a cor original do jogador
+        }
     }
 
     void Update()
     {
+        if (isStunned) return;
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
@@ -38,6 +51,37 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        if (!isStunned)
+        {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    public void Stun(float duration)
+    {
+        if (!isStunned)
+        {
+            StartCoroutine(StunCoroutine(duration));
+        }
+    }
+
+    private IEnumerator StunCoroutine(float duration)
+    {
+        isStunned = true;
+        animator.SetBool("isMoving", false);
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = new Color(1f, 0.5f, 0f, 1f); // Laranja
+        }
+
+        yield return new WaitForSeconds(duration);
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = originalColor;
+        }
+
+        isStunned = false;
     }
 }

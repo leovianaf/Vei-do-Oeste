@@ -215,6 +215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToPlayer: 50
   damageCooldown: 1
+  canStunPlayer: 1
+  stunChance: 0.5
 --- !u!114 &8225055598743464766
 MonoBehaviour:
   m_ObjectHideFlags: 0
