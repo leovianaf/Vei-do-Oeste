@@ -10,7 +10,6 @@ public class Shooter : MonoBehaviour
     private float lastShootTime = 0f;    // Armazena o tempo do último tiro
     public float shootDelay = 0.2f;     // Delay para a bala sair após pressionar o botão
 
-    private float damageBase = 25f; // Dano base da bala
     private float damageBoost = 0f; // Aumento de dano temporário, começa em 0
 
     private Animator animator;
@@ -91,7 +90,8 @@ public class Shooter : MonoBehaviour
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         if (bulletScript != null)
         {
-            bulletScript.SetDamage(damageBase + damageBoost);
+            float currentBulletDamage = bulletScript.damage;
+            bulletScript.SetDamage(currentBulletDamage + damageBoost);
         }
 
         // Rotaciona a bala para a direção correta

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float damage = 25;
+    public float damage = 10;
     private Animator animator;
     private bool isExploding = false;
 
@@ -61,6 +61,7 @@ public class Bullet : MonoBehaviour
     public void SetDamage(float newDamage)
     {
         damage = newDamage;
+        Debug.Log("Dano da bala: " + damage);
     }
 
     // Método para obter o dano base
