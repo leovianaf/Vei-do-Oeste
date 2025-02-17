@@ -1,37 +1,55 @@
-// using UnityEngine;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-// public class DiaryItem : MonoBehaviour
-// {
-//     private bool isPlayerNearby = false;
+public class DiaryItem : MonoBehaviour
+{
+    private bool isPlayerNearby = false;
 
-//     void Update()
-//     {
-//         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
-//         {
-//             StartCutscene();
-//         }
-//     }
+    void Update()
+    {
+        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
+        {
+            StartCutscene();
+        }
+    }
 
-//     private void StartCutscene()
-//     {
-//         FindObjectOfType<CutsceneManager>()?.PlayCutscene();
+    private void StartCutscene()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            GameState.lastPlayerPosition = player.transform.position;
+            GameState.shouldRestorePosition = true;
+        }
+        SceneManager.LoadScene("DiaryCutscene");
+    }
 
-//         FindObjectOfType<PlayerController>().enabled = false;
-//     }
+    void Start()
+    {
+        if (GameState.shouldRestorePosition)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                player.transform.position = GameState.lastPlayerPosition;
+                GameState.shouldRestorePosition = false;
+            }
+        }
+    }
 
-//     private void OnTriggerEnter2D(Collider2D other)
-//     {
-//         if (other.CompareTag("Player"))
-//         {
-//             isPlayerNearby = true;
-//         }
-//     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerNearby = true;
+        }
+    }
 
-//     private void OnTriggerExit2D(Collider2D other)
-//     {
-//         if (other.CompareTag("Player"))
-//         {
-//             isPlayerNearby = false;
-//         }
-//     }
-// }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            isPlayerNearby = false;
+        }
+    }
+}
