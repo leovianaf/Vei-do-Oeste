@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] spawn; // Lista de poções no mapa
-    [SerializeField] private int enemies; //Quantidade de inimigos
+    [SerializeField] private GameObject[] spawn; 
+    [SerializeField] public int enemies; 
     [SerializeField] private GameObject[] enemy;
     [SerializeField] private float spawnDelay = 0.5f;
 

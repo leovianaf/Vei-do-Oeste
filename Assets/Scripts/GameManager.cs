@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections.Generic;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     private GameObject currentMap;
 
     private int mapsPlayed = 0;
+
+    private int enemiesToSpawn = 10;
 
     public static GameManager Instance;
     [SerializeField] private float delayBeforeNewMap = 2f;
@@ -33,7 +35,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadNewMapAfterDelay());
     }
 
-    private System.Collections.IEnumerator LoadNewMapAfterDelay()
+    private IEnumerator LoadNewMapAfterDelay()
     {
         yield return new WaitForSeconds(delayBeforeNewMap);
         LoadRandomMap();
@@ -51,6 +53,8 @@ public class GameManager : MonoBehaviour
 
         int randomIndex = Random.Range(0, mapPrefabs.Length);
         currentMap = Instantiate(mapPrefabs[randomIndex], Vector3.zero, Quaternion.identity);
+
+        currentMap.GetComponent<EnemySpawner>().enemies = enemiesToSpawn;
 
         Transform[] children = currentMap.GetComponentsInChildren<Transform>(includeInactive: true);
 
