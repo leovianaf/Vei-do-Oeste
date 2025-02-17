@@ -85,7 +85,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -99,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -164,10 +164,10 @@ TextureImporter:
       name: AlienRun_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 16
-        width: 26
-        height: 38
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,20 +186,20 @@ TextureImporter:
       name: AlienRun_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 15
-        width: 24
-        height: 39
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 72dcd204d9806bb00800000000000000
-      internalID: 843871451658177831
+      spriteID: 745416748ec422547a87d6a75d745cf6
+      internalID: 690753381
       vertices: []
       indices: 
       edges: []
@@ -208,20 +208,20 @@ TextureImporter:
       name: AlienRun_2
       rect:
         serializedVersion: 2
-        x: 150
-        y: 15
-        width: 22
-        height: 40
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2351b97d59a6d1950800000000000000
-      internalID: 6421405835500131634
+      spriteID: 8c425f3e8a7d76249a86e99928a51a37
+      internalID: 1313386519
       vertices: []
       indices: 
       edges: []
@@ -230,20 +230,20 @@ TextureImporter:
       name: AlienRun_3
       rect:
         serializedVersion: 2
-        x: 214
-        y: 15
-        width: 22
-        height: 39
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c0b387de5dcb43150800000000000000
-      internalID: 5851509442859252492
+      spriteID: f8708f69ddd0f5c4291147d928fec5a9
+      internalID: -2032960890
       vertices: []
       indices: 
       edges: []
@@ -252,20 +252,20 @@ TextureImporter:
       name: AlienRun_4
       rect:
         serializedVersion: 2
-        x: 276
-        y: 15
-        width: 24
-        height: 37
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 75f84b83fba417f30800000000000000
-      internalID: 4571517281908330327
+      spriteID: 9730a03d62a3c84489e82a24e4516444
+      internalID: 1953956989
       vertices: []
       indices: 
       edges: []
@@ -274,20 +274,20 @@ TextureImporter:
       name: AlienRun_5
       rect:
         serializedVersion: 2
-        x: 340
-        y: 15
-        width: 24
-        height: 37
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 10fc3aca9aa3b49d0800000000000000
-      internalID: -2789071043805589759
+      spriteID: 913cd21bc1ab1e34892edc59bd1aac4c
+      internalID: -1368756190
       vertices: []
       indices: 
       edges: []
@@ -296,20 +296,20 @@ TextureImporter:
       name: AlienRun_6
       rect:
         serializedVersion: 2
-        x: 404
-        y: 15
-        width: 24
-        height: 39
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a16ae8f575d161390800000000000000
-      internalID: -7848053039543966182
+      spriteID: 76dec1bac34d6054cbe4e670f86958b2
+      internalID: -304739404
       vertices: []
       indices: 
       edges: []
@@ -318,20 +318,20 @@ TextureImporter:
       name: AlienRun_7
       rect:
         serializedVersion: 2
-        x: 468
-        y: 15
-        width: 24
-        height: 39
+        x: 448
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 39de0a9bfa7da1090800000000000000
-      internalID: -8062895033119871597
+      spriteID: 3c2b7c39cd6535a41a97a096f49e3290
+      internalID: 1354493577
       vertices: []
       indices: 
       edges: []
@@ -340,20 +340,20 @@ TextureImporter:
       name: AlienRun_8
       rect:
         serializedVersion: 2
-        x: 531
-        y: 16
-        width: 26
-        height: 38
+        x: 512
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: def30ee9322a10ca0800000000000000
-      internalID: -6052378150336184339
+      spriteID: 51135aeb6d1842f4b8d434c761af7898
+      internalID: -1728090042
       vertices: []
       indices: 
       edges: []
@@ -362,20 +362,20 @@ TextureImporter:
       name: AlienRun_9
       rect:
         serializedVersion: 2
-        x: 598
-        y: 15
-        width: 22
-        height: 40
+        x: 576
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 084a7fff92dcc6ad0800000000000000
-      internalID: -2707563695684737920
+      spriteID: 7f3908a8d24e80143801f64bc70b545d
+      internalID: -74547851
       vertices: []
       indices: 
       edges: []
@@ -384,20 +384,20 @@ TextureImporter:
       name: AlienRun_10
       rect:
         serializedVersion: 2
-        x: 662
-        y: 15
-        width: 22
-        height: 39
+        x: 640
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 972f4936cc6bb4050800000000000000
-      internalID: 5785919135247823481
+      spriteID: 172e8ef5623489d41a83c138f044e703
+      internalID: 1503338089
       vertices: []
       indices: 
       edges: []
@@ -406,20 +406,20 @@ TextureImporter:
       name: AlienRun_11
       rect:
         serializedVersion: 2
-        x: 724
-        y: 15
-        width: 24
-        height: 37
+        x: 704
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 73456256ed1b83fb0800000000000000
-      internalID: -4667785445031652297
+      spriteID: 380c77b1cff24ca439e98849b744e4cf
+      internalID: 1899115495
       vertices: []
       indices: 
       edges: []
@@ -428,20 +428,20 @@ TextureImporter:
       name: AlienRun_12
       rect:
         serializedVersion: 2
-        x: 788
-        y: 16
-        width: 24
-        height: 38
+        x: 768
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3795adc9a93a521e0800000000000000
-      internalID: -2223190956585625229
+      spriteID: 2c6537540ed1da14bb52294cd0e39086
+      internalID: 1902846008
       vertices: []
       indices: 
       edges: []
@@ -450,20 +450,20 @@ TextureImporter:
       name: AlienRun_13
       rect:
         serializedVersion: 2
-        x: 852
-        y: 16
-        width: 24
-        height: 38
+        x: 832
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 68ee3bcf478ab5280800000000000000
-      internalID: -9053457405488927098
+      spriteID: 9fe9175b42452b54aa0a2fb3ec21a995
+      internalID: 397473717
       vertices: []
       indices: 
       edges: []
@@ -472,20 +472,20 @@ TextureImporter:
       name: AlienRun_14
       rect:
         serializedVersion: 2
-        x: 918
-        y: 15
-        width: 22
-        height: 39
+        x: 896
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bcfca8bf5bdf01cf0800000000000000
-      internalID: -283447818473254965
+      spriteID: 53a80ab7c97e30c489e6fdeb94c91d15
+      internalID: 1004974420
       vertices: []
       indices: 
       edges: []
@@ -494,20 +494,20 @@ TextureImporter:
       name: AlienRun_15
       rect:
         serializedVersion: 2
-        x: 982
-        y: 15
-        width: 22
-        height: 39
+        x: 960
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 11ef09981b6f3c600800000000000000
-      internalID: 487504427063770641
+      spriteID: a0d926c4e1eb8b14399888693f1c8cf9
+      internalID: -867405056
       vertices: []
       indices: 
       edges: []
@@ -516,20 +516,20 @@ TextureImporter:
       name: AlienRun_16
       rect:
         serializedVersion: 2
-        x: 1044
-        y: 15
-        width: 24
-        height: 39
+        x: 1024
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f79981fbfcb9055e0800000000000000
-      internalID: -1922865724320605825
+      spriteID: 7e0870a0aed3765458a050087ce4e8ab
+      internalID: -277606785
       vertices: []
       indices: 
       edges: []
@@ -538,7 +538,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4fded9dfe0aae71479db57547195ec80
     internalID: 0
     vertices: []
     indices: 
@@ -549,22 +549,22 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       AlienRun_0: -57642946196520614
-      AlienRun_1: 843871451658177831
-      AlienRun_10: 5785919135247823481
-      AlienRun_11: -4667785445031652297
-      AlienRun_12: -2223190956585625229
-      AlienRun_13: -9053457405488927098
-      AlienRun_14: -283447818473254965
-      AlienRun_15: 487504427063770641
-      AlienRun_16: -1922865724320605825
-      AlienRun_2: 6421405835500131634
-      AlienRun_3: 5851509442859252492
-      AlienRun_4: 4571517281908330327
-      AlienRun_5: -2789071043805589759
-      AlienRun_6: -7848053039543966182
-      AlienRun_7: -8062895033119871597
-      AlienRun_8: -6052378150336184339
-      AlienRun_9: -2707563695684737920
+      AlienRun_1: 690753381
+      AlienRun_10: 1503338089
+      AlienRun_11: 1899115495
+      AlienRun_12: 1902846008
+      AlienRun_13: 397473717
+      AlienRun_14: 1004974420
+      AlienRun_15: -867405056
+      AlienRun_16: -277606785
+      AlienRun_2: 1313386519
+      AlienRun_3: -2032960890
+      AlienRun_4: 1953956989
+      AlienRun_5: -1368756190
+      AlienRun_6: -304739404
+      AlienRun_7: 1354493577
+      AlienRun_8: -1728090042
+      AlienRun_9: -74547851
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

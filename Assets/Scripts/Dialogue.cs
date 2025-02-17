@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -13,9 +14,11 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
 
     private int currentLineIndex;
+    private CutsceneManager cutsceneManager;
 
     void Start()
     {
+        cutsceneManager = FindObjectOfType<CutsceneManager>();
         Time.timeScale = 0f;
 
         dialoguePanel.SetActive(true);
@@ -78,5 +81,10 @@ public class Dialogue : MonoBehaviour
         dialoguePanel.SetActive(false);
         advanceDialogueText.SetActive(false);
         Time.timeScale = 1f;
+
+        if (cutsceneManager != null && SceneManager.GetActiveScene().name == "DiaryCutscene")
+        {
+            cutsceneManager.LoadNextScene();
+        }
     }
 }
