@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e82abde9ce5aa46bc8ca1a8632927a, type: 3}
+  m_Name: Colt_Cosmico
+  m_EditorClassIdentifier: 
+  weaponName: Colt
+  damage: 40
+  bulletSpeed: 10
+  range: 8
+  fireRate: 1
+  maxBullets: 6
+  cost: 200
+  bulletPrefab: {fileID: 3226753336997059343, guid: b183caaac2cb3ad4ab94e56227cb526c, type: 3}
+  weaponIcon: {fileID: 4609766379470990746, guid: c743e68cd2fb3d54bbf14e822c746b03, type: 3}

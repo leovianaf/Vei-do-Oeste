@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7095179190925246766}
   - component: {fileID: -3355212346774030289}
   - component: {fileID: 8225055598743464766}
+  - component: {fileID: -7411808660321284759}
   m_Layer: 0
   m_Name: Skelleton_Enemy
   m_TagString: Enemy
@@ -215,6 +216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToPlayer: 20
   damageCooldown: 1
+  canStunPlayer: 0
+  stunChance: 0.5
 --- !u!114 &8225055598743464766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,3 +231,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+--- !u!114 &-7411808660321284759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692084798164906337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf9b63c43f6e484590a8161c9ca85bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minCoinsDrop: 3
+  maxCoinsDrop: 5
