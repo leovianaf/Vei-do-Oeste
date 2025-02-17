@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
 
     private EnemyMovement enemyMovement;
     private Collider2D enemyCollider;
+    private EnemyCurrency enemyCurrency;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class EnemyHealth : MonoBehaviour
         animator = GetComponent<Animator>();
         enemyMovement = GetComponent<EnemyMovement>();
         enemyCollider = GetComponent<Collider2D>();
+        enemyCurrency = GetComponent<EnemyCurrency>();
     }
 
     public void TakeDamage(int damage)
@@ -44,6 +46,10 @@ public class EnemyHealth : MonoBehaviour
         if (enemyCollider != null)
         {
             enemyCollider.enabled = false;
+        }
+        if (enemyCurrency != null)
+        {
+            enemyCurrency.DropCoins();
         }
 
         Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length);

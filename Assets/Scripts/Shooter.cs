@@ -3,10 +3,13 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    public GameObject bulletPrefab;
+    //public GameObject bulletPrefab;
     public Transform firePoint;
-    public float bulletSpeed = 10f;
-    public float shootCooldown = 0.5f;  // Tempo de cooldown entre os tiros
+    //public float bulletSpeed = 10f;
+    //public float shootCooldown = 0.5f;  // Tempo de cooldown entre os tiros
+    [HideInInspector] public float bulletSpeed;
+    [HideInInspector] public float shootCooldown;
+    [HideInInspector] public GameObject bulletPrefab;
     private float lastShootTime = 0f;    // Armazena o tempo do último tiro
     public float shootDelay = 0.2f;     // Delay para a bala sair após pressionar o botão
 
@@ -28,6 +31,13 @@ public class Shooter : MonoBehaviour
 
     void Update()
     {
+        // Bloqueia o tiro se qualquer painel estiver aberto
+        if (ShopManager.IsShopOpen || InventoryManager.IsInventoryOpen)
+        {
+            animator.SetBool("Shoot", false); // Reseta a animação
+            return;
+        }
+        
         // Verifica se o jogador pode atirar
         if (Time.time - lastShootTime >= shootCooldown && Input.GetMouseButtonDown(0)) // Botão esquerdo do mouse
         {
@@ -80,18 +90,18 @@ public class Shooter : MonoBehaviour
         // Instancia a bala
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
 
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            rb.linearVelocity = shootDirection * bulletSpeed;
-        }
-
         // Modifica o dano da bala com o multiplicador de dano
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         if (bulletScript != null)
         {
-            float currentBulletDamage = bulletScript.damage;
-            bulletScript.SetDamage(currentBulletDamage + damageBoost);
+            float totalDamage = PlayerWeapon.instance.currentWeapon.damage + damageBoost;
+            bulletScript.SetDamage(totalDamage);
+        }
+
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = shootDirection * bulletSpeed;
         }
 
         // Rotaciona a bala para a direção correta
@@ -115,5 +125,12 @@ public class Shooter : MonoBehaviour
     private void ResetDamageBoost()
     {
         damageBoost = 0f; // Reseta o aumento de dano de volta para 0
+    }
+
+    public void UpdateWeaponStats(Weapon weapon)
+    {
+        shootCooldown = weapon.fireRate;
+        bulletPrefab = weapon.bulletPrefab;
+        bulletSpeed = weapon.bulletSpeed;        
     }
 }
