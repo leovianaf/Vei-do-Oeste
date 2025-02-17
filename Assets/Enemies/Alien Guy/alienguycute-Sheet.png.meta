@@ -158,12 +158,12 @@ TextureImporter:
       name: alienguycute-Sheet_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 0
-        width: 24
-        height: 47
+        x: 13
+        y: 1
+        width: 22
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,19 +180,19 @@ TextureImporter:
       name: alienguycute-Sheet_1
       rect:
         serializedVersion: 2
-        x: 60
-        y: 0
-        width: 24
-        height: 48
+        x: 61
+        y: 1
+        width: 22
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9a1f9a056e7aa2480800000000000000
+      spriteID: e36c569b00eba99429331b549fb1ec70
       internalID: -8923135104043585111
       vertices: []
       indices: 
@@ -202,19 +202,19 @@ TextureImporter:
       name: alienguycute-Sheet_2
       rect:
         serializedVersion: 2
-        x: 108
-        y: 0
-        width: 24
-        height: 47
+        x: 109
+        y: 1
+        width: 22
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c1040eb6fcb404bd0800000000000000
+      spriteID: 841e60f51ce4a9741a20c2e06ad5000f
       internalID: -2648033226653679588
       vertices: []
       indices: 
@@ -224,19 +224,19 @@ TextureImporter:
       name: alienguycute-Sheet_3
       rect:
         serializedVersion: 2
-        x: 156
-        y: 0
-        width: 24
-        height: 48
+        x: 157
+        y: 1
+        width: 22
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7e9dcebc678172720800000000000000
+      spriteID: fc3502b2a0175a84e94524ac8099f4f1
       internalID: 2821250590077409767
       vertices: []
       indices: 
@@ -246,19 +246,19 @@ TextureImporter:
       name: alienguycute-Sheet_4
       rect:
         serializedVersion: 2
-        x: 204
-        y: 0
-        width: 24
-        height: 47
+        x: 205
+        y: 1
+        width: 22
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a62a188d28d582f50800000000000000
+      spriteID: 42d865c8328d8d64097f903b07856fff
       internalID: 6856833249231086186
       vertices: []
       indices: 
@@ -268,19 +268,19 @@ TextureImporter:
       name: alienguycute-Sheet_5
       rect:
         serializedVersion: 2
-        x: 254
-        y: 0
-        width: 23
-        height: 46
+        x: 255
+        y: 1
+        width: 21
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ee55187d9525333a0800000000000000
+      spriteID: b2bce1537486f3640a28d092f61d0165
       internalID: -6686910475893910034
       vertices: []
       indices: 
@@ -290,19 +290,19 @@ TextureImporter:
       name: alienguycute-Sheet_6
       rect:
         serializedVersion: 2
-        x: 302
-        y: 1
-        width: 23
-        height: 46
+        x: 303
+        y: 2
+        width: 21
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bfbc34a9a4b76f2d0800000000000000
+      spriteID: b2ba1529c38ee124daeaa3e8ec03bbf8
       internalID: -3245270921127932933
       vertices: []
       indices: 
@@ -312,19 +312,19 @@ TextureImporter:
       name: alienguycute-Sheet_7
       rect:
         serializedVersion: 2
-        x: 347
-        y: 0
-        width: 23
-        height: 46
+        x: 348
+        y: 1
+        width: 21
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 305efefb39d714c80800000000000000
+      spriteID: 66facda20a7dd6549a5bba86a1577576
       internalID: -8340246961379613437
       vertices: []
       indices: 
@@ -334,19 +334,19 @@ TextureImporter:
       name: alienguycute-Sheet_8
       rect:
         serializedVersion: 2
-        x: 395
-        y: 1
-        width: 23
-        height: 46
+        x: 396
+        y: 2
+        width: 21
+        height: 44
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0183ff37250b60f30800000000000000
+      spriteID: d2957def27d1932429e08a7bf56fa4f4
       internalID: 4541511142429636624
       vertices: []
       indices: 
@@ -356,19 +356,19 @@ TextureImporter:
       name: alienguycute-Sheet_9
       rect:
         serializedVersion: 2
-        x: 444
-        y: 0
-        width: 24
-        height: 47
+        x: 445
+        y: 1
+        width: 22
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4b3b61be624cc3440800000000000000
+      spriteID: aa060654e9a221c409ecbeeab1e56cd5
       internalID: 4917020564613673908
       vertices: []
       indices: 
@@ -378,19 +378,19 @@ TextureImporter:
       name: alienguycute-Sheet_10
       rect:
         serializedVersion: 2
-        x: 492
-        y: 1
-        width: 24
-        height: 47
+        x: 493
+        y: 2
+        width: 22
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2508af9e7ff6d2d80800000000000000
+      spriteID: 37ea83eb4a3c07b42bdcd0ae4bf16367
       internalID: -8273833829836619694
       vertices: []
       indices: 
@@ -400,19 +400,19 @@ TextureImporter:
       name: alienguycute-Sheet_11
       rect:
         serializedVersion: 2
-        x: 540
-        y: 0
-        width: 24
-        height: 47
+        x: 541
+        y: 1
+        width: 22
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: befb1e750cb3f4510800000000000000
+      spriteID: 62a3a012570967f4f9eb1e242b7f53c8
       internalID: 1535511695250800619
       vertices: []
       indices: 
@@ -422,19 +422,19 @@ TextureImporter:
       name: alienguycute-Sheet_12
       rect:
         serializedVersion: 2
-        x: 588
-        y: 1
-        width: 24
-        height: 47
+        x: 589
+        y: 2
+        width: 22
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a66c1d4363324bcb0800000000000000
+      spriteID: 831a6b010bb205b4b9081470c4f262ea
       internalID: -4849212183049812374
       vertices: []
       indices: 
@@ -444,19 +444,19 @@ TextureImporter:
       name: alienguycute-Sheet_13
       rect:
         serializedVersion: 2
-        x: 636
-        y: 0
-        width: 24
-        height: 47
+        x: 637
+        y: 1
+        width: 22
+        height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12b237c24068ce360800000000000000
+      spriteID: dd37539b272fa504da26a8b45cb35fc1
       internalID: 7200277256742316833
       vertices: []
       indices: 
@@ -466,19 +466,19 @@ TextureImporter:
       name: alienguycute-Sheet_14
       rect:
         serializedVersion: 2
-        x: 672
-        y: 1
-        width: 46
-        height: 23
+        x: 673
+        y: 2
+        width: 44
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1ef923c7a4537e710800000000000000
+      spriteID: d279ce1794d40d04abcaa20f0bf6df2e
       internalID: 1722403976520048609
       vertices: []
       indices: 
@@ -488,7 +488,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4607cd2ab4b9169469bc321eae772193
     internalID: 0
     vertices: []
     indices: 
