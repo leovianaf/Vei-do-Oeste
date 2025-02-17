@@ -9,7 +9,7 @@ public class Shooter : MonoBehaviour
     //public float shootCooldown = 0.5f;  // Tempo de cooldown entre os tiros
     [HideInInspector] public float bulletSpeed;
     [HideInInspector] public float shootCooldown;
-    [HideInInspector] public GameObject bulletPrefab;
+    public GameObject bulletPrefab;
     private float lastShootTime = 0f;    // Armazena o tempo do último tiro
     public float shootDelay = 0.2f;     // Delay para a bala sair após pressionar o botão
 

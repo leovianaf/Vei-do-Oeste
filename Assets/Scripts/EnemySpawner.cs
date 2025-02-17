@@ -1,7 +1,5 @@
-
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -12,20 +10,23 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
+        EnemyManager.Instance.InitializeProgress(enemies);
         StartCoroutine(DelayedSpawns());
     }
 
     private void SpawnEnemies()
     {
         int randomIndex = Random.Range(0, spawn.Length);
-
         int randomIndexEnemy = Random.Range(0, enemy.Length);
-        GameObject enemyPrefab = enemy[randomIndexEnemy];
         
-        GameObject enemySpawned = Instantiate(enemyPrefab, spawn[randomIndex].transform.position, spawn[randomIndex].transform.rotation);
+        GameObject enemyPrefab = enemy[randomIndexEnemy];
+        GameObject enemySpawned = Instantiate(
+            enemyPrefab, 
+            spawn[randomIndex].transform.position, 
+            spawn[randomIndex].transform.rotation
+        );
+        
         EnemyManager.Instance.AddEnemy(enemySpawned);
-
-
     }
 
     IEnumerator DelayedSpawns()
@@ -36,6 +37,4 @@ public class EnemySpawner : MonoBehaviour
             yield return new WaitForSeconds(spawnDelay);
         }
     }
-
-
 }

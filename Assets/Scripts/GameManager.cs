@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -32,6 +33,10 @@ public class GameManager : MonoBehaviour
  
     public void LoadNextMap()
     {
+        mapsPlayed++;
+        if(mapsPlayed == 2){
+            SceneManager.LoadScene("CutScene");
+        }
         StartCoroutine(LoadNewMapAfterDelay());
     }
 

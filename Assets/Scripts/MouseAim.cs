@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class MouseAim : MonoBehaviour
 {
-    private Camera mainCamera;
+    [SerializeField]private Camera mainCamera;
 
     void Start()
     {
         // Cursor.visible = false; // Subir com deploy para esconder mouse
-        mainCamera = Camera.main;
+       // mainCamera = Camera.main;
     }
 
     void Update()
