@@ -12,7 +12,7 @@ public class PlayerWeapon : MonoBehaviour
         {
             instance = this;        
             shooter = GetComponent<Shooter>();
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {
