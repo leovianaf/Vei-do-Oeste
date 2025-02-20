@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
     private EnemyMovement enemyMovement;
     private Collider2D enemyCollider;
     private EnemyCurrency enemyCurrency;
+    private Rigidbody2D rb;
 
     void Start()
     {
@@ -19,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
         enemyMovement = GetComponent<EnemyMovement>();
         enemyCollider = GetComponent<Collider2D>();
         enemyCurrency = GetComponent<EnemyCurrency>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void TakeDamage(int damage)
@@ -38,15 +40,21 @@ public class EnemyHealth : MonoBehaviour
         isDead = true;
         animator.SetTrigger("Die");
 
-        if (ScoreManager.instance != null)
+        if (rb != null)
         {
-            ScoreManager.instance.AddScore(1);
+            rb.linearVelocity = Vector2.zero;
         }
 
         if (enemyCollider != null)
         {
             enemyCollider.enabled = false;
         }
+
+        if (ScoreManager.instance != null)
+        {
+            ScoreManager.instance.AddScore(1);
+        }
+
         if (enemyCurrency != null)
         {
             enemyCurrency.DropCoins();

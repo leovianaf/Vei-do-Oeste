@@ -22454,8 +22454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundTilemap: {fileID: 537920415}
   healItemPrefab: {fileID: 59332049354898557, guid: ca6fe949a5d948049ab092e42f1d8d8e, type: 3}
-  damageItemPrefab: {fileID: 9132795637309048265, guid: e927d113efd1cba479fac543ae7fff26, type: 3}
-  spawnInterval: 10
+  spawnInterval: 12
 --- !u!1 &1528807488
 GameObject:
   m_ObjectHideFlags: 0
