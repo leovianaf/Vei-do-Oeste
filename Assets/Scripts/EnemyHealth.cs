@@ -9,12 +9,16 @@ public class EnemyHealth : MonoBehaviour
     private bool isDead = false;
 
     private EnemyMovement enemyMovement;
+    private Collider2D enemyCollider;
+    private EnemyCurrency enemyCurrency;
 
     void Start()
     {
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
         enemyMovement = GetComponent<EnemyMovement>();
+        enemyCollider = GetComponent<Collider2D>();
+        enemyCurrency = GetComponent<EnemyCurrency>();
     }
 
     public void TakeDamage(int damage)
@@ -24,6 +28,7 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
+            EnemyManager.Instance.RemoveEnemy(gameObject); 
             Die();
         }
     }
@@ -38,6 +43,20 @@ public class EnemyHealth : MonoBehaviour
             ScoreManager.instance.AddScore(1);
         }
 
+        if (enemyCollider != null)
+        {
+            enemyCollider.enabled = false;
+        }
+        if (enemyCurrency != null)
+        {
+            enemyCurrency.DropCoins();
+        }
+
         Destroy(gameObject, animator.GetCurrentAnimatorStateInfo(0).length);
+    }
+
+    public bool IsDead()
+    {
+        return isDead;
     }
 }

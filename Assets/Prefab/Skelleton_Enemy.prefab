@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 7095179190925246766}
   - component: {fileID: -3355212346774030289}
   - component: {fileID: 8225055598743464766}
+  - component: {fileID: -7411808660321284759}
   m_Layer: 0
   m_Name: Skelleton_Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6831624386409039945, guid: 26fe21af94bb8b241be471f00b8cdb4a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -200,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9476147ba833b3f419d6a43f84392b28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 3
 --- !u!114 &-3355212346774030289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,8 +214,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b7f0cbdfc3b30747838ba93b09469bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToPlayer: 50
+  damageToPlayer: 20
   damageCooldown: 1
+  canStunPlayer: 0
+  stunChance: 0.5
 --- !u!114 &8225055598743464766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,4 +230,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3caca1d082b6b5e4baa465840e7fa6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 20
+--- !u!114 &-7411808660321284759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692084798164906337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf9b63c43f6e484590a8161c9ca85bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minCoinsDrop: 3
+  maxCoinsDrop: 5

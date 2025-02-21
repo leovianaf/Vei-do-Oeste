@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 41d165ed35c8507488b97ddc198410b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4775398466834468174
+    second: AlienGrab_0
+  - first:
+      213: -8277561762471312912
+    second: AlienGrab_1
+  - first:
+      213: -924608251658597397
+    second: AlienGrab_2
+  - first:
+      213: 8017622732476846052
+    second: AlienGrab_3
+  - first:
+      213: -4935499567411052537
+    second: AlienGrab_4
+  - first:
+      213: 4574194893866103595
+    second: AlienGrab_5
+  - first:
+      213: -8332919778150835109
+    second: AlienGrab_6
+  - first:
+      213: -469533034589374044
+    second: AlienGrab_7
+  - first:
+      213: -4968900523788609134
+    second: AlienGrab_8
+  - first:
+      213: -8185063108765110054
+    second: AlienGrab_9
+  - first:
+      213: 4908738837142883721
+    second: AlienGrab_10
+  - first:
+      213: -6723870817815643083
+    second: AlienGrab_11
+  - first:
+      213: 7550733220419760725
+    second: AlienGrab_12
+  - first:
+      213: -3654126727119144301
+    second: AlienGrab_13
+  - first:
+      213: -7127090172808902033
+    second: AlienGrab_14
+  - first:
+      213: 1213124456479423950
+    second: AlienGrab_15
+  - first:
+      213: -3707085536184266619
+    second: AlienGrab_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlienGrab_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 12
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d0d9cba9f954240800000000000000
+      internalID: 4775398466834468174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 12
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f18a85fe61302d80800000000000000
+      internalID: -8277561762471312912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 12
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb8e73a1b12b23f0800000000000000
+      internalID: -924608251658597397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_3
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 12
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef01606561544f60800000000000000
+      internalID: 8017622732476846052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 12
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700ce57fa45918bb0800000000000000
+      internalID: -4935499567411052537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 12
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b237b46550eca7f30800000000000000
+      internalID: 4574194893866103595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 12
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c1e798c958b5c80800000000000000
+      internalID: -8332919778150835109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 12
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a93df65132eb79f0800000000000000
+      internalID: -469533034589374044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_8
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 12
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 299d35bcc4bea0bb0800000000000000
+      internalID: -4968900523788609134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_9
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 12
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0b6e90870d86e80800000000000000
+      internalID: -8185063108765110054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_10
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 12
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98dc01bf6f75f1440800000000000000
+      internalID: 4908738837142883721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_11
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 12
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cbb74ad1300b2a0800000000000000
+      internalID: -6723870817815643083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_12
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 12
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5527cd4cbd799c860800000000000000
+      internalID: 7550733220419760725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_13
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 12
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a7dc12a1fe94dc0800000000000000
+      internalID: -3654126727119144301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_14
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 12
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a4c8faf3d771d90800000000000000
+      internalID: -7127090172808902033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_15
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 12
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd7bc80442e5d010800000000000000
+      internalID: 1213124456479423950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlienGrab_16
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 12
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5809fb78859cd8cc0800000000000000
+      internalID: -3707085536184266619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AlienGrab_0: 4775398466834468174
+      AlienGrab_1: -8277561762471312912
+      AlienGrab_10: 4908738837142883721
+      AlienGrab_11: -6723870817815643083
+      AlienGrab_12: 7550733220419760725
+      AlienGrab_13: -3654126727119144301
+      AlienGrab_14: -7127090172808902033
+      AlienGrab_15: 1213124456479423950
+      AlienGrab_16: -3707085536184266619
+      AlienGrab_2: -924608251658597397
+      AlienGrab_3: 8017622732476846052
+      AlienGrab_4: -4935499567411052537
+      AlienGrab_5: 4574194893866103595
+      AlienGrab_6: -8332919778150835109
+      AlienGrab_7: -469533034589374044
+      AlienGrab_8: -4968900523788609134
+      AlienGrab_9: -8185063108765110054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

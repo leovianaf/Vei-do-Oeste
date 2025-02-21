@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Wall
   - Bullet
+  - PlayerSpawner
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - UI
   - Wall
   - Bullet
-  - 
+  - Dialogue
   - 
   - 
   - 
@@ -40,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Aim
+    uniqueID: 2139241847
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
