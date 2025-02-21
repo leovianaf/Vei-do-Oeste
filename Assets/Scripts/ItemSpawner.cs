@@ -5,7 +5,6 @@ public class ItemSpawner : MonoBehaviour
 {
     public Tilemap groundTilemap;      // Referência ao Tilemap de Ground
     public GameObject healItemPrefab;
-    public GameObject damageItemPrefab;
     public float spawnInterval = 10f;
     private float timeSinceLastSpawn = 0f;
 
@@ -28,13 +27,6 @@ public class ItemSpawner : MonoBehaviour
         if (healPosition != Vector3Int.zero)
         {
             Instantiate(healItemPrefab, groundTilemap.CellToWorld(healPosition), Quaternion.identity);
-        }
-
-        // Spawn do item de aumento de dano
-        Vector3Int damagePosition = GetRandomGroundTilePosition();
-        if (damagePosition != Vector3Int.zero && damagePosition != healPosition)  // Garante que não sobreponha o item de cura
-        {
-            Instantiate(damageItemPrefab, groundTilemap.CellToWorld(damagePosition), Quaternion.identity);
         }
     }
 
