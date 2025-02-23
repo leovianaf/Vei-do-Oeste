@@ -14,7 +14,6 @@ public class PlayerHealth : MonoBehaviour
     private PlayerMovement playerMovement;
 
     // GameUI
-    public GameObject[] heartObjects; // Array de objetos de cora��o no GameUI
     public GameObject gameOverScreen;
 
     void Start()
@@ -24,8 +23,15 @@ public class PlayerHealth : MonoBehaviour
         slider.maxValue = maxHealth;
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
-
         UpdateHealthUI();
+    }
+
+    private void UpdateHealthUI()
+    {
+        if (slider != null)
+        {
+            slider.value = currentHealth;
+        }
     }
 
     public void TakeDamage(int damage)
@@ -33,12 +39,11 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
 
         currentHealth -= damage;
-        slider.value = currentHealth;
 
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            LoseHeart();
+            Die();
         }
 
         UpdateHealthUI();
@@ -49,27 +54,7 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
 
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
-        slider.value = currentHealth;
         UpdateHealthUI();
-    }
-
-    private void LoseHeart()
-    {
-        int remainingHearts = currentHealth / 50;
-
-        if (remainingHearts < heartObjects.Length)
-        {
-            heartObjects[remainingHearts].SetActive(false); // Desativa o cora��o perdido
-        }
-
-        if (remainingHearts <= 0)
-        {
-            TriggerGameOver(); // Game Over quando perder todos os cora��es
-        }
-        else
-        {
-            Die(); // Respawn ao perder um cora��o
-        }
     }
 
     private void Die()
@@ -108,8 +93,6 @@ public class PlayerHealth : MonoBehaviour
         {
             playerMovement.enabled = true;
         }
-
-        UpdateHealthUI();
     }
 
     private void TriggerGameOver()
@@ -117,15 +100,5 @@ public class PlayerHealth : MonoBehaviour
         isDead = true;
         gameOverScreen.SetActive(true);
         Time.timeScale = 0;
-    }
-
-    public void UpdateHealthUI()
-    {
-        int heartsToDisplay = currentHealth / 50;
-
-        for (int i = 0; i < heartObjects.Length; i++)
-        {
-            heartObjects[i].SetActive(i < heartsToDisplay);
-        }
     }
 }

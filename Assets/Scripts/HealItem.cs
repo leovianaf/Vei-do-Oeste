@@ -13,10 +13,9 @@ public class HealItem : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.Heal(healAmount);
-                playerHealth.UpdateHealthUI();
             }
 
-            Destroy(gameObject); // Destrói o item após ser pego
+            Destroy(gameObject);
         }
     }
 }
