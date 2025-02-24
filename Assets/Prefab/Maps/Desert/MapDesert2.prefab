@@ -141,7 +141,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundTilemap: {fileID: 6915585116224783712}
   healItemPrefab: {fileID: 59332049354898557, guid: ca6fe949a5d948049ab092e42f1d8d8e, type: 3}
-  damageItemPrefab: {fileID: 9132795637309048265, guid: e927d113efd1cba479fac543ae7fff26, type: 3}
   spawnInterval: 10
 --- !u!1 &2973339506100734999
 GameObject:
@@ -4602,7 +4601,7 @@ Transform:
   m_GameObject: {fileID: 6502884896039692735}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.070932, y: 6.4845986, z: 0.18821716}
+  m_LocalPosition: {x: 21.1, y: 6.4845986, z: 0.18821716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

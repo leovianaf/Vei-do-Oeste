@@ -31,4 +31,10 @@ public class PlayerWeapon : MonoBehaviour
         currentWeapon = newWeapon;
         shooter.UpdateWeaponStats(newWeapon);
     }
+
+    public void SetWeapon(Weapon newWeapon)
+    {
+        currentWeapon = newWeapon;
+        EquipWeapon(newWeapon); // Supondo que este método equipe a arma no personagem
+    }
 }

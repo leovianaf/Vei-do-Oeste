@@ -4,11 +4,13 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public static PlayerHealth instance;
     public Slider slider;
     public int maxHealth = 150;
     private int currentHealth;
     private Animator animator;
     private bool isDead = false;
+    public float damageReduction = 0f;
 
     public Transform respawnPoint;  // Ponto de respawn do jogador
     private PlayerMovement playerMovement;
@@ -37,8 +39,8 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         if (isDead) return;
-
-        currentHealth -= damage;
+        int reducedDamage = Mathf.RoundToInt(damage * (1 - damageReduction));
+        currentHealth -= reducedDamage;
 
         if (currentHealth <= 0)
         {
@@ -82,6 +84,7 @@ public class PlayerHealth : MonoBehaviour
 
         yield return new WaitForSeconds(0.85f);
 
+        Time.timeScale = 1;
         transform.position = respawnPoint.position;
         currentHealth = Mathf.Max(currentHealth, 50); // Garantir ao menos 50 de vida ap�s respawn
         slider.value = currentHealth;
