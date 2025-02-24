@@ -1,12 +1,16 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
+using TMPro;
 
 public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager Instance; 
     [SerializeField] private string enemyTag = "Enemy";
-    [SerializeField] private Slider progressSlider;
+    [SerializeField] private TextMeshProUGUI enemyText;
+
 
     private List<GameObject> activeEnemies = new List<GameObject>();
     private int totalEnemiesInRoom;
@@ -24,8 +28,6 @@ public class EnemyManager : MonoBehaviour
     {
         totalEnemiesInRoom = totalEnemies;
         enemiesKilled = 0;
-        progressSlider.maxValue = totalEnemies;
-        progressSlider.value = 0;
     }
 
     public void AddEnemy(GameObject enemy)
@@ -37,16 +39,24 @@ public class EnemyManager : MonoBehaviour
     {
         activeEnemies.Remove(enemy);
         enemiesKilled++;
-        UpdateProgressBar();
+        UpdateProgress();
 
         if (enemiesKilled == totalEnemiesInRoom)
         {
-            GameManager.Instance.LoadNextMap();
+            StartCoroutine(LoadCutScene());
         }
     }
 
-    void UpdateProgressBar()
+    void UpdateProgress()
     {
-        progressSlider.value = enemiesKilled;
+        enemyText.text = enemiesKilled+"/10";
+    }
+
+
+    private IEnumerator LoadCutScene()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("CutScene");
+
     }
 }
