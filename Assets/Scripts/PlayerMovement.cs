@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
     public float moveSpeed = 4f;
+    //private float baseMoveSpeed;
     private Vector2 movement;
     private Rigidbody2D rb;
     private Animator animator;
@@ -26,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
         if (isStunned) return;
 
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -57,6 +60,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void UpdateSpeed(float multiplier)
+    {
+        moveSpeed = moveSpeed * (1 + multiplier);
+        Debug.Log($"Velocidade atualizada: {moveSpeed}");
+    }
+
     public void Stun(float duration)
     {
         if (!isStunned)
@@ -84,4 +93,5 @@ public class PlayerMovement : MonoBehaviour
 
         isStunned = false;
     }
+
 }

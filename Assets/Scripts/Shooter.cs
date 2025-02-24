@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class Shooter : MonoBehaviour
 {
@@ -21,12 +22,20 @@ public class Shooter : MonoBehaviour
 
     private int lastShootDirection = 2; // 2 = Baixo por padrão
     private bool isShooting = false; // Controla o estado da camada Shooting
+    private int currentAmmo;
+    private int maxAmmo = 30;  // Munição inicial máxima
+    private bool isReloading = false;
+
+    public TMP_Text ammoText; // UI de munição
 
     void Start()
     {
         animator = GetComponent<Animator>();
         mainCamera = Camera.main;
         playerMovement = GetComponent<PlayerMovement>(); // Referência ao movimento do player
+
+        currentAmmo = maxAmmo;
+        UpdateAmmoUI();
     }
 
     void Update()
@@ -41,9 +50,21 @@ public class Shooter : MonoBehaviour
         // Verifica se o jogador pode atirar
         if (Time.time - lastShootTime >= shootCooldown && Input.GetMouseButtonDown(0)) // Botão esquerdo do mouse
         {
-            SetShootDirection();
-            Shoot();
-            lastShootTime = Time.time;
+            if (currentAmmo >= PlayerWeapon.instance.currentWeapon.maxBullets && !isReloading)
+            {
+                SetShootDirection();
+                Shoot();
+                lastShootTime = Time.time;
+            }
+            else
+            {
+                Debug.Log("Sem munição! Pressione 'R' para recarregar.");
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.R) && !isReloading && currentAmmo == 0)
+        {
+            StartCoroutine(Reload());
         }
 
         // Atualiza o peso da camada Shooting corretamente
@@ -108,6 +129,10 @@ public class Shooter : MonoBehaviour
         float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
         bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
+        // Consome munição
+        currentAmmo -= PlayerWeapon.instance.currentWeapon.maxBullets;
+        UpdateAmmoUI();
+
         // Após o disparo, resetar o aumento de dano
         ResetDamageBoost();
 
@@ -125,6 +150,26 @@ public class Shooter : MonoBehaviour
     private void ResetDamageBoost()
     {
         damageBoost = 0f; // Reseta o aumento de dano de volta para 0
+    }
+
+    IEnumerator Reload()
+    {
+        isReloading = true;
+        Debug.Log("Recarregando...");
+        yield return new WaitForSeconds(3f);
+
+        currentAmmo = maxAmmo;
+        isReloading = false;
+        UpdateAmmoUI();
+        Debug.Log("Recarga concluída!");
+    }
+
+    void UpdateAmmoUI()
+    {
+        if (ammoText != null)
+        {
+            ammoText.text = currentAmmo + "/" + maxAmmo;
+        }
     }
 
     public void UpdateWeaponStats(Weapon weapon)

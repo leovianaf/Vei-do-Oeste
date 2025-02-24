@@ -65,7 +65,9 @@ public class ShopManager : MonoBehaviour
         if (CurrencyManager.instance.SpendCoins(weapon.cost))
         {
             Debug.Log("Compra bem-sucedida!");
+            
             InventoryManager.instance.AddWeapon(weapon);
+
             Destroy(weaponButtons[weapon]);
             weaponButtons.Remove(weapon);
             ShowMessage("Compra realizada!", "#88FFA9");

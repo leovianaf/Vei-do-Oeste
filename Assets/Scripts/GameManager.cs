@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject mapBossPrefab;
     [SerializeField] private Transform player; 
     [SerializeField] private string playerSpawnTag = "PlayerSpawner";
+    [SerializeField] private CameraController cameraController;
+    [SerializeField] private PlayerHealth playerHealth;
+    [SerializeField] private PlayerMovement playerMovement;
 
     private GameObject currentMap;
 
@@ -27,8 +30,17 @@ public class GameManager : MonoBehaviour
     }
 
     void Start()
-    {
+    {      
         LoadRandomMap();
+
+        if (CameraController.instance == null)
+            CameraController.instance = cameraController;
+
+        if (PlayerHealth.instance == null)
+            PlayerHealth.instance = playerHealth;
+
+        if (PlayerMovement.instance == null)
+            PlayerMovement.instance = playerMovement;
     }
 
  
