@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -72,7 +73,8 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator Respawn()
     {
-        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Dies") &&
+
+        /* while (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Dies") &&
                animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
         {
             Debug.Log("Estado atual: " + animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Dies"));
@@ -92,7 +94,9 @@ public class PlayerHealth : MonoBehaviour
         if (playerMovement != null)
         {
             playerMovement.enabled = true;
-        }
+        } */
+        yield return new WaitForSeconds(0.85f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void TriggerGameOver()

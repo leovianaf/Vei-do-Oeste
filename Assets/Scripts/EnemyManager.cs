@@ -11,6 +11,7 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] private string enemyTag = "Enemy";
     [SerializeField] private TextMeshProUGUI enemyText;
 
+    [SerializeField] private bool isDesert = false;
 
     private List<GameObject> activeEnemies = new List<GameObject>();
     private int totalEnemiesInRoom;
@@ -43,7 +44,10 @@ public class EnemyManager : MonoBehaviour
 
         if (enemiesKilled == totalEnemiesInRoom)
         {
-            StartCoroutine(LoadCutScene());
+            if(isDesert){
+                StartCoroutine(LoadCutScene());
+            }
+            GameManager.Instance.LoadNextMap();
         }
     }
 
