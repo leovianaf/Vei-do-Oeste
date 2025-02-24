@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject[] mapPrefabs;
+    [SerializeField] private GameObject mapBossPrefab;
     [SerializeField] private Transform player; 
     [SerializeField] private string playerSpawnTag = "PlayerSpawner";
     [SerializeField] private CameraController cameraController;
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     private GameObject currentMap;
 
-    private int mapsPlayed = 0;
+    [SerializeField] private int mapsPlayed = 0;
 
     private int enemiesToSpawn = 10;
 
@@ -46,8 +47,30 @@ public class GameManager : MonoBehaviour
     public void LoadNextMap()
     {
         mapsPlayed++;
-        if(mapsPlayed == 2){
-            SceneManager.LoadScene("GameScene");
+        if(mapsPlayed >= 2){
+
+            if (currentMap != null)
+            {
+                Destroy(currentMap);
+                currentMap = null;
+            }
+            currentMap = Instantiate(mapBossPrefab, Vector3.zero, Quaternion.identity);
+
+            //currentMap.GetComponent<EnemySpawner>().enemies = enemiesToSpawn;
+
+            Transform[] children = currentMap.GetComponentsInChildren<Transform>(includeInactive: true);
+
+            Transform t = FindWithTag(children, "PlayerSpawner");
+            
+            Transform playerSpawn = GameObject.FindGameObjectWithTag("PlayerSpawner").transform;
+
+            if (playerSpawn != null && player != null)
+            {
+                player.position = t.position;
+                player.rotation = t.rotation;
+            }
+
+            return;
         }
         StartCoroutine(LoadNewMapAfterDelay());
     }
