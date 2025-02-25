@@ -11,7 +11,10 @@ public class CurrencyManager : MonoBehaviour
     private void Awake()
     {
         if (instance == null)
+        {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         else
             Destroy(gameObject);
     }
@@ -25,6 +28,7 @@ public class CurrencyManager : MonoBehaviour
     {
         totalCoins += amount;
         UpdateUI();
+        Debug.Log($"Moedas atuais: {totalCoins}");
     }
 
     public bool SpendCoins(int amount)

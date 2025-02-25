@@ -4,16 +4,16 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 20;
-    private int currentHealth;
-    private Animator animator;
-    private bool isDead = false;
+    protected int currentHealth;
+    protected Animator animator;
+    protected bool isDead = false;
 
-    private EnemyMovement enemyMovement;
-    private Collider2D enemyCollider;
-    private EnemyCurrency enemyCurrency;
-    private Rigidbody2D rb;
+    protected EnemyMovement enemyMovement;
+    protected Collider2D enemyCollider;
+    protected EnemyCurrency enemyCurrency;
+    protected Rigidbody2D rb;
 
-    void Start()
+    protected virtual void Start()
     {
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
         if (isDead) return;
 
@@ -35,7 +35,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    private void Die()
+    protected virtual void Die()
     {
         isDead = true;
         animator.SetTrigger("Die");
