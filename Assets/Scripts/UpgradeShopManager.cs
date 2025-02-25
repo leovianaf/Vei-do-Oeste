@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class UpgradeShopManager : MonoBehaviour
 {
     public static UpgradeShopManager instance;
+    public static bool IsUpgradeShopOpen { get; private set; }
     public GameObject upgradePanel;
     public UpgradeItem[] upgradeItems;
 
@@ -49,7 +50,7 @@ public class UpgradeShopManager : MonoBehaviour
             }
             else
             {
-                nextCosts[i].text = upgradeItems[i].costs[upgradeItems[i].currentLevel].ToString();
+                nextCosts[i].text = $"Valor: {upgradeItems[i].costs[upgradeItems[i].currentLevel].ToString()}";
                 upgradeButtons[i].interactable = CurrencyManager.instance.totalCoins >= upgradeItems[i].costs[upgradeItems[i].currentLevel];
             }
         }

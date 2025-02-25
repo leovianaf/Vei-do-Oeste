@@ -10,6 +10,7 @@ public class Shooter : MonoBehaviour
     //public float shootCooldown = 0.5f;  // Tempo de cooldown entre os tiros
     [HideInInspector] public float bulletSpeed;
     [HideInInspector] public float shootCooldown;
+    [SerializeField] private AudioSource reloadSound;
     public GameObject bulletPrefab;
     private float lastShootTime = 0f;    // Armazena o tempo do último tiro
     public float shootDelay = 0.2f;     // Delay para a bala sair após pressionar o botão
@@ -41,7 +42,7 @@ public class Shooter : MonoBehaviour
     void Update()
     {
         // Bloqueia o tiro se qualquer painel estiver aberto
-        if (ShopManager.IsShopOpen || InventoryManager.IsInventoryOpen)
+        if (ShopManager.IsShopOpen || InventoryManager.IsInventoryOpen || UpgradeShopManager.IsUpgradeShopOpen)
         {
             animator.SetBool("Shoot", false); // Reseta a animação
             return;
@@ -62,7 +63,7 @@ public class Shooter : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && !isReloading && currentAmmo == 0)
+        if (currentAmmo == 0 && !isReloading)
         {
             StartCoroutine(Reload());
         }
@@ -156,6 +157,10 @@ public class Shooter : MonoBehaviour
     {
         isReloading = true;
         Debug.Log("Recarregando...");
+        
+        if (reloadSound != null)
+            reloadSound.Play();
+        
         yield return new WaitForSeconds(3f);
 
         currentAmmo = maxAmmo;
