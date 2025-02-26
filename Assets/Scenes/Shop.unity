@@ -582,11 +582,13 @@ MonoBehaviour:
   - {fileID: 2973339506100734999, guid: 6f795ca07d875264c8d8eb5f13c1fa3b, type: 3}
   - {fileID: 5753064018522847451, guid: 613d2f105c1474c408ff8714e88dabae, type: 3}
   - {fileID: 8546429036170436536, guid: 08b48d3eb9db6f041bed6551b779beba, type: 3}
+  mapBossPrefab: {fileID: 0}
   player: {fileID: 1200418991}
   playerSpawnTag: PlayerSpawner
   cameraController: {fileID: 1002397861}
   playerHealth: {fileID: 1200418995}
   playerMovement: {fileID: 1200418996}
+  mapsPlayed: 0
   delayBeforeNewMap: 2
 --- !u!114 &167378087
 MonoBehaviour:
@@ -601,7 +603,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyTag: Enemy
-  progressSlider: {fileID: 1386348632}
+  enemyText: {fileID: 0}
+  isDesert: 0
 --- !u!114 &167378089
 MonoBehaviour:
   m_ObjectHideFlags: 0
