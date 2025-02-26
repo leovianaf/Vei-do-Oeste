@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien_darkgrey__0002_alien_main_eye2_0: -4707325539237318093
+      alien_darkgrey__0002_alien_main_eye2_1: -3551559246898147884
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

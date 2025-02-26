@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      predatormask__0034_attack_4_0: -5309419872446667225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

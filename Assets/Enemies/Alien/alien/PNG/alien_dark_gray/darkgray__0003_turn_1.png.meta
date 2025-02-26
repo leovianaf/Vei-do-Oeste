@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      darkgray__0003_turn_1_0: -3263911528700307707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

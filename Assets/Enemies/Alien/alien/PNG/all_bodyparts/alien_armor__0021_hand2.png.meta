@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien_armor__0021_hand2_0: -219522699556724752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
