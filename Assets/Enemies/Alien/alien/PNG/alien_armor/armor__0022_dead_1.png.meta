@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      armor__0022_dead_1_0: 6908776807248265706
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

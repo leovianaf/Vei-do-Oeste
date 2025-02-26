@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      darkgray__0031_attack_1_0: 588183846916323849
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

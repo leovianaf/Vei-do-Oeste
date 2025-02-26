@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien_armor__0011_leg3_0: -3893358701157866142
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

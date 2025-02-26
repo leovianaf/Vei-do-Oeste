@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2606157556060070197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3173050832807453290}
+  m_Layer: 0
+  m_Name: FirePoint_Alien
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3173050832807453290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2606157556060070197}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1209563749507920519}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7312907096145715542
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,11 +43,10 @@ GameObject:
   - component: {fileID: 6248019547999637373}
   - component: {fileID: 3889331629742583152}
   - component: {fileID: 4707007487864866287}
-  - component: {fileID: 7872068375116828736}
   - component: {fileID: 9140331473712770117}
   - component: {fileID: 3418394453571971290}
+  - component: {fileID: -6331695780542696313}
   - component: {fileID: 6551381930285038331}
-  - component: {fileID: 8168124460572268224}
   m_Layer: 0
   m_Name: Alien
   m_TagString: Enemy
@@ -36,7 +66,8 @@ Transform:
   m_LocalPosition: {x: -2.1342201, y: 2.6592288, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3173050832807453290}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6248019547999637373
@@ -82,7 +113,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -6998284502145257876, guid: b46300c900c54bb43b0107434e17f51c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -167,19 +198,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.13, y: 4.32}
   m_EdgeRadius: 0
---- !u!114 &7872068375116828736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7312907096145715542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9476147ba833b3f419d6a43f84392b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3
 --- !u!95 &9140331473712770117
 Animator:
   serializedVersion: 7
@@ -214,7 +232,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3caca1d082b6b5e4baa465840e7fa6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 25
+--- !u!114 &-6331695780542696313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7312907096145715542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00f8dfb3997d29249a13dfc99f4b72b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3.5
+  stopDistance: 5
+  retreatDistance: 6.5
 --- !u!114 &6551381930285038331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,24 +260,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d56e57a14e85f14aaa85eb61fe03aac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToPlayer: 50
-  attackCooldown: 1.5
+  damageToPlayer: 25
+  attackCooldown: 1
   attackRange: 5
-  firePoint: {fileID: 0}
---- !u!114 &8168124460572268224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7312907096145715542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3028d88763b0c6649b757b7ffc668d1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {fileID: 0}
-  bulletSpeed: 0
-  shootCooldown: 0
-  bulletPrefab: {fileID: 3226753336997059343, guid: b183caaac2cb3ad4ab94e56227cb526c, type: 3}
-  shootDelay: 0.2
+  firePoint: {fileID: 3173050832807453290}
+  enemyBulletPrefab: {fileID: 7276077050984151001, guid: be37866f95425504db506115e1067740, type: 3}
+  useProjectiles: 1
