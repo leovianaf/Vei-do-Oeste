@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien_predator_mask_0020_left_eye_0: -3131339918647317177
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

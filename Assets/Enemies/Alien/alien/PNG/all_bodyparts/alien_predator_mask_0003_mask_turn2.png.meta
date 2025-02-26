@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien_predator_mask_0003_mask_turn2_0: -4351869803724729652
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

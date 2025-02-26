@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      darkgray__0027_jump_1_0: 2900847260047088739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

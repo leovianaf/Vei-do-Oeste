@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      darkgray__0039_fire_5_0: -6602846836412159908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
