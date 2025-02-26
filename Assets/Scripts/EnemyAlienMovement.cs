@@ -13,6 +13,7 @@ public class EnemyAlienMovement : MonoBehaviour
     private EnemyHealth enemyHealth;
     private EnemyRangedAttack enemyRangedAttack;
     private bool isFlipped = false;
+    private bool isMoving = true;
 
     void Start()
     {
@@ -35,6 +36,7 @@ public class EnemyAlienMovement : MonoBehaviour
         animator.SetFloat("Vertical", direction.y);
         animator.SetFloat("Speed", rb.linearVelocity.magnitude);
 
+        // Flip do inimigo
         if (direction.x < 0 && !isFlipped)
         {
             isFlipped = true;
@@ -48,9 +50,14 @@ public class EnemyAlienMovement : MonoBehaviour
             FlipFirePoint();
         }
 
+        // Se o inimigo estiver perto o suficiente, ele para antes de atirar
         if (distanceToPlayer <= stopDistance)
         {
             StopMoving();
+        }
+        else if (distanceToPlayer > retreatDistance)
+        {
+            isMoving = true;
         }
     }
 
@@ -64,7 +71,7 @@ public class EnemyAlienMovement : MonoBehaviour
 
         float distanceToPlayer = Vector2.Distance(transform.position, playerPosition.position);
 
-        if (distanceToPlayer > stopDistance)
+        if (distanceToPlayer > stopDistance && isMoving)
         {
             Vector2 direction = (playerPosition.position - transform.position).normalized;
             rb.linearVelocity = direction * moveSpeed;
@@ -77,6 +84,7 @@ public class EnemyAlienMovement : MonoBehaviour
 
     void StopMoving()
     {
+        isMoving = false;
         rb.linearVelocity = Vector2.zero;
         animator.SetFloat("Speed", 0);
     }
@@ -85,9 +93,9 @@ public class EnemyAlienMovement : MonoBehaviour
     {
         if (enemyRangedAttack.firePoint != null)
         {
-            Vector3 localScale = enemyRangedAttack.firePoint.localScale;
-            localScale.x = Mathf.Abs(localScale.x) * (spriteRenderer.flipX ? -1 : 1);
-            enemyRangedAttack.firePoint.localScale = localScale;
+            Vector3 firePointScale = enemyRangedAttack.firePoint.localScale;
+            firePointScale.x = Mathf.Abs(firePointScale.x) * (spriteRenderer.flipX ? -1 : 1);
+            enemyRangedAttack.firePoint.localScale = firePointScale;
         }
     }
 }

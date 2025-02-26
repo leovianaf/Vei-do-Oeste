@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2606157556060070197}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.08, y: -0.21, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 3889331629742583152}
   - component: {fileID: 4707007487864866287}
   - component: {fileID: 9140331473712770117}
-  - component: {fileID: 7872068375116828736}
   - component: {fileID: 3418394453571971290}
+  - component: {fileID: -6331695780542696313}
   - component: {fileID: 6551381930285038331}
   m_Layer: 0
   m_Name: Alien
@@ -220,19 +220,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7872068375116828736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7312907096145715542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9476147ba833b3f419d6a43f84392b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3.5
 --- !u!114 &3418394453571971290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +233,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 25
+--- !u!114 &-6331695780542696313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7312907096145715542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00f8dfb3997d29249a13dfc99f4b72b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3.5
+  stopDistance: 5
+  retreatDistance: 6.5
 --- !u!114 &6551381930285038331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,9 +261,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageToPlayer: 25
-  attackCooldown: 0.5
+  attackCooldown: 1
   attackRange: 5
   firePoint: {fileID: 3173050832807453290}
-  hitChance: 0.4
   enemyBulletPrefab: {fileID: 7276077050984151001, guid: be37866f95425504db506115e1067740, type: 3}
   useProjectiles: 1
