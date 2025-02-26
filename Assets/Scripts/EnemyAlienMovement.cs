@@ -3,8 +3,8 @@ using UnityEngine;
 public class EnemyAlienMovement : MonoBehaviour
 {
     public float moveSpeed = 3f;
-    public float stopDistance = 5f; // Distância para parar e atirar
-    public float retreatDistance = 6.5f; // Distância para voltar a correr atrás do jogador
+    public float stopDistance = 5f;
+    public float retreatDistance = 6.5f;
 
     private Transform playerPosition;
     private Rigidbody2D rb;
@@ -12,6 +12,7 @@ public class EnemyAlienMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private EnemyHealth enemyHealth;
     private EnemyRangedAttack enemyRangedAttack;
+    private bool isFlipped = false;
 
     void Start()
     {
@@ -20,7 +21,6 @@ public class EnemyAlienMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         enemyHealth = GetComponent<EnemyHealth>();
         enemyRangedAttack = GetComponent<EnemyRangedAttack>();
-
         playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -35,17 +35,22 @@ public class EnemyAlienMovement : MonoBehaviour
         animator.SetFloat("Vertical", direction.y);
         animator.SetFloat("Speed", rb.linearVelocity.magnitude);
 
-        spriteRenderer.flipX = direction.x < 0;
+        if (direction.x < 0 && !isFlipped)
+        {
+            isFlipped = true;
+            spriteRenderer.flipX = true;
+            FlipFirePoint();
+        }
+        else if (direction.x > 0 && isFlipped)
+        {
+            isFlipped = false;
+            spriteRenderer.flipX = false;
+            FlipFirePoint();
+        }
 
-        // Verifica se deve atirar ou se mover
         if (distanceToPlayer <= stopDistance)
         {
-            rb.linearVelocity = Vector2.zero; // Para de andar
-            enemyRangedAttack.enabled = true; // Ativa ataque à distância
-        }
-        else if (distanceToPlayer > retreatDistance)
-        {
-            enemyRangedAttack.enabled = false; // Desativa ataque à distância
+            StopMoving();
         }
     }
 
@@ -53,7 +58,7 @@ public class EnemyAlienMovement : MonoBehaviour
     {
         if (playerPosition == null || enemyHealth.IsDead())
         {
-            rb.linearVelocity = Vector2.zero;
+            StopMoving();
             return;
         }
 
@@ -66,7 +71,23 @@ public class EnemyAlienMovement : MonoBehaviour
         }
         else
         {
-            rb.linearVelocity = Vector2.zero;
+            StopMoving();
+        }
+    }
+
+    void StopMoving()
+    {
+        rb.linearVelocity = Vector2.zero;
+        animator.SetFloat("Speed", 0);
+    }
+
+    void FlipFirePoint()
+    {
+        if (enemyRangedAttack.firePoint != null)
+        {
+            Vector3 localScale = enemyRangedAttack.firePoint.localScale;
+            localScale.x = Mathf.Abs(localScale.x) * (spriteRenderer.flipX ? -1 : 1);
+            enemyRangedAttack.firePoint.localScale = localScale;
         }
     }
 }

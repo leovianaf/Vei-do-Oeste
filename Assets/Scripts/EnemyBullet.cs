@@ -2,20 +2,24 @@ using UnityEngine;
 
 public class EnemyBullet : MonoBehaviour
 {
-    public float speed = 5f; // Velocidade do projétil
-    public int damage = 50; // Dano ao jogador
-    public float lifetime = 3f; // Tempo antes do projétil desaparecer
-
+    public float speed = 5f;
+    public float lifetime = 3f;
+    private int bulletDamage = 0;
     private Vector2 direction;
 
     void Start()
     {
-        Destroy(gameObject, lifetime); // Destroi a bala após um tempo
+        Destroy(gameObject, lifetime);
     }
 
     public void SetDirection(Vector2 newDirection)
     {
         direction = newDirection.normalized;
+    }
+
+    public void SetDamage(int damage)
+    {
+        bulletDamage = damage;
     }
 
     void Update()
@@ -30,11 +34,11 @@ public class EnemyBullet : MonoBehaviour
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damage);
+                playerHealth.TakeDamage(bulletDamage);
             }
-            Destroy(gameObject); // Destroi a bala ao atingir o jogador
+            Destroy(gameObject);
         }
-        else if (collision.CompareTag("Obstacle")) // Caso bata em obstáculos, some
+        else if (collision.CompareTag("Wall"))
         {
             Destroy(gameObject);
         }
