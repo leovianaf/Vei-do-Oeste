@@ -7,6 +7,7 @@ public class EnemyRangedAttack : MonoBehaviour
     public float attackCooldown = 1.5f;
     public float attackRange = 5f; // Distância de ataque
     public Transform firePoint; // Ponto de origem do ataque (pode ser a ponta da arma)
+    public float hitChance = 0.4f; // 40% de chance de acerto
     
     private float lastAttackTime;
     private Animator animator;
@@ -31,18 +32,36 @@ public class EnemyRangedAttack : MonoBehaviour
             {
                 Attack(player);
             }
+            else
+            {
+                animator.SetBool("isAttack", false); // Garante que o ataque é desativado ao sair do alcance
+            }
         }
     }
     
     void Attack(GameObject player)
     {
         animator.SetTrigger("Attack");
+        animator.SetBool("isAttack", true);
         
-        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-        if (playerHealth != null)
+        if (Random.value <= hitChance) // 40% de chance de acerto
         {
-            playerHealth.TakeDamage(damageToPlayer);
-            lastAttackTime = Time.time;
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damageToPlayer);
+            }
         }
+        
+        lastAttackTime = Time.time;
+        
+        // Desativa a flag após um curto período de tempo
+        StartCoroutine(ResetAttackAnimation());
+    }
+
+    IEnumerator ResetAttackAnimation()
+    {
+        yield return new WaitForSeconds(0.5f); // Ajuste conforme necessário
+        animator.SetBool("isAttack", false);
     }
 }

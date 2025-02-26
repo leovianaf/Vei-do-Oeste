@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blue__0045_fire_10_0: 8944143667919689375
+      blue__0045_fire_10_1: 5518087614158794392
+      blue__0045_fire_10_10: 6031668911685450647
+      blue__0045_fire_10_11: -1625154566437241166
+      blue__0045_fire_10_12: -798203439455643497
+      blue__0045_fire_10_13: -1079906451850191895
+      blue__0045_fire_10_2: -137345245714886519
+      blue__0045_fire_10_3: 7059958331501472365
+      blue__0045_fire_10_4: -7871754638979892766
+      blue__0045_fire_10_5: -6376908703738155837
+      blue__0045_fire_10_6: 6679567173844722029
+      blue__0045_fire_10_7: -1466880695818283663
+      blue__0045_fire_10_8: 5232628804679156946
+      blue__0045_fire_10_9: 5547134879871117855
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

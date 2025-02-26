@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien_red__0011_neck_0: -3443543884350550836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

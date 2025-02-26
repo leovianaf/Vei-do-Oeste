@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      red__0019_hurt_2_0: 9076388166275708119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

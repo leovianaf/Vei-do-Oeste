@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alien_grey_nose2_0: -3154967756993172918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

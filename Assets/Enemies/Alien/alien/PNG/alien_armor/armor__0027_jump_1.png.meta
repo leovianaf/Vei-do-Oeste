@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      armor__0027_jump_1_0: -1423523557142136272
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

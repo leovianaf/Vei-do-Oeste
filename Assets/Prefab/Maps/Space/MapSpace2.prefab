@@ -6022,8 +6022,8 @@ MonoBehaviour:
   - {fileID: 536720536812321772}
   enemies: 10
   enemy:
-  - {fileID: 2029098230424710638, guid: 77acf96cc7fc3a8459da418f151447ed, type: 3}
-  - {fileID: 8692084798164906337, guid: 1e6d1a17412da374c8fada97e7d3b3b5, type: 3}
+  - {fileID: 7312907096145715542, guid: e6ee9eca17ad93c40a4d956005126f9a, type: 3}
+  - {fileID: 7679008341303721594, guid: 7a65a778b33c93241b3d503e04c27c69, type: 3}
   spawnDelay: 4
 --- !u!1 &8845319865707341465
 GameObject:

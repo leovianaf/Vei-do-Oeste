@@ -497,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gray__0044_fire_10_0: -6262093463736879610
+      gray__0044_fire_10_1: -850204113401848778
+      gray__0044_fire_10_10: 4549375598408157260
+      gray__0044_fire_10_11: 8465512283577808983
+      gray__0044_fire_10_12: -6420428541565935754
+      gray__0044_fire_10_13: 587916144136658084
+      gray__0044_fire_10_14: -8451312818574286417
+      gray__0044_fire_10_2: -3206898741346046863
+      gray__0044_fire_10_3: 1596854933118862257
+      gray__0044_fire_10_4: -6309445700769178880
+      gray__0044_fire_10_5: 4000025397917320456
+      gray__0044_fire_10_6: -8867030721549350902
+      gray__0044_fire_10_7: 3936355212684028709
+      gray__0044_fire_10_8: -7040195978436917945
+      gray__0044_fire_10_9: -1343455308699329151
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -374,11 +374,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 0}
   maxHealth: 150
+  damageReduction: 0
   respawnPoint: {fileID: 0}
-  heartObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   gameOverScreen: {fileID: 0}
 --- !u!114 &2871780602833964110
 MonoBehaviour:
@@ -395,8 +392,10 @@ MonoBehaviour:
   firePoint: {fileID: 781648326037804098}
   bulletSpeed: 10
   shootCooldown: 0.5
+  reloadSound: {fileID: 0}
   bulletPrefab: {fileID: 3226753336997059343, guid: b183caaac2cb3ad4ab94e56227cb526c, type: 3}
   shootDelay: 0.2
+  ammoText: {fileID: 0}
 --- !u!82 &3014251942633161081
 AudioSource:
   m_ObjectHideFlags: 0
@@ -506,4 +505,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e44d547394da440ab09af9602e3f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWeapon: {fileID: 11400000, guid: 56b24c8938904d2459239c0073f32bdb, type: 2}
+  currentWeapon: {fileID: 11400000, guid: 5c47ea6825829a74eac6075e413c6dd5, type: 2}
