@@ -5,44 +5,85 @@ public class EnemyRangedAttack : MonoBehaviour
 {
     public int damageToPlayer = 50;
     public float attackCooldown = 1.5f;
-    public float attackRange = 5f; // Distância de ataque
-    public Transform firePoint; // Ponto de origem do ataque (pode ser a ponta da arma)
-    
-    private float lastAttackTime;
+    public float attackRange = 5f;
+    public Transform firePoint;
+    public GameObject enemyBulletPrefab;
+    public bool useProjectiles = true;
+
+    private float lastAttackTime = 0f;
     private Animator animator;
     private EnemyHealth enemyHealth;
-    
+    private Transform playerTransform;
+    private bool isAttacking = false;
+    private AudioSource audioSource;
+
     void Start()
     {
         enemyHealth = GetComponent<EnemyHealth>();
         animator = GetComponent<Animator>();
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        audioSource = GetComponent<AudioSource>();
     }
-    
+
     void Update()
     {
-        if (enemyHealth != null && enemyHealth.IsDead()) return;
-        
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
+        if (enemyHealth.IsDead() || playerTransform == null) return;
+
+        float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+
+        // Só ataca se estiver na distância correta e respeitando o cooldown
+        if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown && !isAttacking)
         {
-            float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
-            
-            if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
-            {
-                Attack(player);
-            }
+            StartCoroutine(AttackRoutine());
         }
     }
-    
-    void Attack(GameObject player)
+
+    IEnumerator AttackRoutine()
     {
+        isAttacking = true;
+        lastAttackTime = Time.time;
+
         animator.SetTrigger("Attack");
-        
-        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-        if (playerHealth != null)
+        animator.SetBool("isAttack", true);
+
+        yield return new WaitForSeconds(0.3f); // Pequeno atraso antes do disparo
+
+        if (useProjectiles)
         {
-            playerHealth.TakeDamage(damageToPlayer);
-            lastAttackTime = Time.time;
+            ShootProjectile();
+        }
+        else
+        {
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
+
+            PlayerHealth playerHealth = playerTransform.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damageToPlayer);
+            }
+        }
+
+        yield return new WaitForSeconds(attackCooldown);
+        animator.SetBool("isAttack", false);
+        isAttacking = false;
+    }
+
+    void ShootProjectile()
+    {
+        if (enemyBulletPrefab == null || firePoint == null) return;
+
+        GameObject bullet = Instantiate(enemyBulletPrefab, firePoint.position, Quaternion.identity);
+        EnemyBullet bulletScript = bullet.GetComponent<EnemyBullet>();
+
+        if (bulletScript != null)
+        {
+            // Calcula a direção do player a partir do FirePoint
+            Vector2 shootDirection = (playerTransform.position - firePoint.position).normalized;
+            bulletScript.SetDirection(shootDirection);
+            bulletScript.SetDamage(damageToPlayer);
         }
     }
 }
