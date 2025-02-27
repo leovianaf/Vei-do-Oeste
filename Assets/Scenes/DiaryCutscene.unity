@@ -391,7 +391,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundTilemap: {fileID: 593224671}
   healItemPrefab: {fileID: 59332049354898557, guid: ca6fe949a5d948049ab092e42f1d8d8e, type: 3}
-  damageItemPrefab: {fileID: 9132795637309048265, guid: e927d113efd1cba479fac543ae7fff26, type: 3}
   spawnInterval: 10
 --- !u!1 &528763609
 GameObject:
@@ -7782,15 +7781,43 @@ MonoBehaviour:
   advanceDialogueText: {fileID: 933540398}
   textComponent: {fileID: 528763611}
   customFont: {fileID: 11400000, guid: d08b45349623e5345b0edaa53f84af78, type: 2}
-  lines:
-  - "Se algu\xE9m estiver lendo isto... ent\xE3o talvez eu j\xE1 n\xE3o esteja mais
-    aqui."
+  lines: []
+  textSpeed: 0.05
+  diaryDialoguesSet1:
   - "Meu nome \xE9 Ezekiel \"Zeke\" Holloway, vivia perseguindo bandidos, bebendo
     u\xEDsque barato e dormindo onde desse."
   - "Mas ent\xE3o veio a luz\u2026 aquela maldita luz branca que me arrancou da terra
     e me trouxe pra esse lugar."
   - Eu acordei numa cela sem lembrar como cheguei aqui.
-  textSpeed: 0.05
+  diaryDialoguesSet2:
+  - "Eu andei pelos corredores. Nada faz sentido. N\xE3o h\xE1 janelas, s\xF3 portas
+    de metal que se abrem sozinhas, como se estivessem me esperando."
+  - "As paredes brilham com s\xEDmbolos que n\xE3o sei ler, pulsando como se estivessem
+    vivas."
+  - "Um cheiro estranho no ar \u2013 met\xE1lico, qu\xEDmico. N\xE3o h\xE1 som de
+    vento, de p\xE1ssaros\u2026"
+  - "S\xF3 um zumbido constante, como se algo gigantesco respirasse ao meu redor."
+  - "N\xE3o estamos em nenhum lugar da Terra."
+  diaryDialoguesSet3:
+  - "Eu vi eles. Alto demais, magros demais, com olhos grandes que brilham na escurid\xE3o."
+  - "Eles andam devagar, como se j\xE1 soubessem tudo que vai acontecer."
+  - "Mas n\xE3o s\xE3o s\xF3 eles. Tem outras coisas aqui... criaturas que j\xE1
+    foram homens."
+  - "Eles est\xE3o fazendo algo com a gente."
+  diaryDialoguesSet4:
+  - "Eu queria acreditar que h\xE1 um motivo pra tudo isso. Mas n\xE3o h\xE1."
+  - "Sou s\xF3 um pobre bastardo que teve o azar de estar no lugar errado, na hora
+    errada."
+  - "Tenho saudades da minha filha, da minha fam\xEDlia, do meu bar favorito..."
+  - "Qual o objetivo deles? Nos estudar? Fazer teste em n\xF3s?"
+  - "Ou ser\xE1 que somos s\xF3.. comida?"
+  diaryDialoguesSet5:
+  - "Agora eu sei. Vi com meus pr\xF3prios olhos."
+  - "Eles nos torturam, nos amea\xE7am, fazem experimentos em n\xF3s..."
+  - "Eu n\xE3o vou ser o pr\xF3ximo."
+  diaryDialoguesSet6:
+  - "Eles querem um ex\xE9rcito. Selecionaram os mais corajosos do velho oeste..."
+  - "Se encontrar este di\xE1rio... corra. Corra antes que seja tarde."
 --- !u!114 &689212629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20090,7 +20117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c99d637138b407b4989137f1d0ebeea0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: GameScene
 --- !u!4 &1224912511
 Transform:
   m_ObjectHideFlags: 0
