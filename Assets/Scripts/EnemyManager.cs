@@ -51,6 +51,12 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    public void ResetEnemiesKilled()
+    {
+        enemiesKilled = 0;
+        UpdateProgress();
+    }
+
     void UpdateProgress()
     {
         enemyText.text = enemiesKilled+"/10";

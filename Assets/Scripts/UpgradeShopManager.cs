@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -7,6 +8,7 @@ public class UpgradeShopManager : MonoBehaviour
     public static UpgradeShopManager instance;
     public static bool IsUpgradeShopOpen { get; private set; }
     public GameObject upgradePanel;
+    public TMP_Text upgradeMessageText;
     public UpgradeItem[] upgradeItems;
 
     [Header("UI References")]
@@ -23,6 +25,11 @@ public class UpgradeShopManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+    void Start()
+    {
+        upgradeMessageText.text = "";
+    }
+
     void Update()
     {
         /* if (Input.GetKeyDown(KeyCode.U))
@@ -33,6 +40,7 @@ public class UpgradeShopManager : MonoBehaviour
     {
         upgradePanel.SetActive(!upgradePanel.activeSelf);
         Time.timeScale = upgradePanel.activeSelf ? 0 : 1;
+        upgradeMessageText.text = "";
         UpdateUI();
     }
 
@@ -67,6 +75,7 @@ public class UpgradeShopManager : MonoBehaviour
         {
             item.currentLevel++;
             ApplyUpgradeEffect(index);
+            ShowMessage("Upgrade Realizado!", "#88FFA9");
             UpdateUI();
         }
     }
@@ -85,6 +94,29 @@ public class UpgradeShopManager : MonoBehaviour
                 PlayerMovement.instance.UpdateSpeed(0.05f * upgradeItems[2].currentLevel);
                 break;
         }
+    }
+
+    void ShowMessage(string message, string hexColor)
+    {
+        upgradeMessageText.text = message;
+
+        if (ColorUtility.TryParseHtmlString(hexColor, out Color color))
+        {
+            upgradeMessageText.color = color;
+        }
+        else
+        {
+            Debug.LogWarning("Cor inválida: " + hexColor);
+        }
+
+        StopAllCoroutines();
+        StartCoroutine(ClearMessageAfterDelay());
+    }
+
+    IEnumerator ClearMessageAfterDelay()
+    {
+        yield return new WaitForSecondsRealtime(2f); // Usa tempo real para funcionar mesmo com Time.timeScale = 0
+        upgradeMessageText.text = "";
     }
 }
 

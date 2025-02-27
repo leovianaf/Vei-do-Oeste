@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Shooter : MonoBehaviour
 {
+    public static Shooter instance;
     //public GameObject bulletPrefab;
     public Transform firePoint;
     public GameObject mouseAim;
@@ -31,6 +32,14 @@ public class Shooter : MonoBehaviour
 
     public TMP_Text ammoText; // UI de munição
     [SerializeField] private GameManager gameManager;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
 
     void Start()
     {
@@ -178,6 +187,13 @@ public class Shooter : MonoBehaviour
         isReloading = false;
         UpdateAmmoUI();
         Debug.Log("Recarga concluída!");
+    }
+
+    public void ReloadAmmo()
+    {
+        currentAmmo = maxAmmo;
+        UpdateAmmoUI();
+        Debug.Log("Munição recarregada no respawn!");
     }
 
     void UpdateAmmoUI()

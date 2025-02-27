@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: -5785662208896652615}
   - component: {fileID: 5252673386069611934}
   - component: {fileID: 3609594256094073878}
+  - component: {fileID: 8329680631226214640}
   m_Layer: 0
   m_Name: AlienPredator
   m_TagString: Enemy
@@ -364,3 +365,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8329680631226214640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7679008341303721594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf9b63c43f6e484590a8161c9ca85bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minCoinsDrop: 8
+  maxCoinsDrop: 10

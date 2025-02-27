@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 3418394453571971290}
   - component: {fileID: -6331695780542696313}
   - component: {fileID: 6551381930285038331}
+  - component: {fileID: 5360005054054643972}
   m_Layer: 0
   m_Name: Alien
   m_TagString: Enemy
@@ -266,3 +267,17 @@ MonoBehaviour:
   firePoint: {fileID: 3173050832807453290}
   enemyBulletPrefab: {fileID: 7276077050984151001, guid: be37866f95425504db506115e1067740, type: 3}
   useProjectiles: 1
+--- !u!114 &5360005054054643972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7312907096145715542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf9b63c43f6e484590a8161c9ca85bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minCoinsDrop: 6
+  maxCoinsDrop: 8
