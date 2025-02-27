@@ -32,11 +32,11 @@ public class ShopManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+/*         if (Input.GetKeyDown(KeyCode.C))
         {
             Debug.Log("C pressionado!"); // Adicione esta linha
             ToggleShop();
-        }
+        } */
     }
 
     void PopulateShop()
