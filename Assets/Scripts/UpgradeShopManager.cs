@@ -25,8 +25,8 @@ public class UpgradeShopManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.U))
-            ToggleShop();
+        /* if (Input.GetKeyDown(KeyCode.U))
+            ToggleShop(); */
     }
 
     public void ToggleShop()

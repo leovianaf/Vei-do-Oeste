@@ -13,7 +13,7 @@ public class EnemyManager : MonoBehaviour
 
     [SerializeField] private bool isDesert = false;
 
-    private List<GameObject> activeEnemies = new List<GameObject>();
+    public List<GameObject> activeEnemies = new List<GameObject>();
     private int totalEnemiesInRoom;
     private int enemiesKilled;
 
