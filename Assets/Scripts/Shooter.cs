@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Shooter : MonoBehaviour
 {
@@ -44,16 +45,19 @@ public class Shooter : MonoBehaviour
     void Update()
     {
         // Bloqueia o tiro se qualquer painel estiver aberto
-        if (ShopManager.IsShopOpen || InventoryManager.IsInventoryOpen || UpgradeShopManager.IsUpgradeShopOpen || gameManager.isInShop)
-        {
-            animator.SetBool("Shoot", false); // Reseta a animação
-            mouseAim.gameObject.SetActive(false);
-            return;
-        }
+        if(SceneManager.GetActiveScene().name == "GameScene"){
+            if (ShopManager.IsShopOpen || InventoryManager.IsInventoryOpen || UpgradeShopManager.IsUpgradeShopOpen || gameManager.isInShop)
+            {
+                animator.SetBool("Shoot", false); // Reseta a animação
+                mouseAim.gameObject.SetActive(false);
+                return;
+            }
 
-        if(!gameManager.isInShop){
-            mouseAim.gameObject.SetActive(true);
+            if(!gameManager.isInShop){
+                mouseAim.gameObject.SetActive(true);
+            }
         }
+        
         
         // Verifica se o jogador pode atirar
         if (Time.time - lastShootTime >= shootCooldown && Input.GetMouseButtonDown(0)) // Botão esquerdo do mouse

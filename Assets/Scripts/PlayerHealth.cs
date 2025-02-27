@@ -99,10 +99,17 @@ public class PlayerHealth : MonoBehaviour
             playerMovement.enabled = true;
         } */
         yield return new WaitForSeconds(0.85f);
+
+        string currentScene = SceneManager.GetActiveScene().name;
         
-        gameManager.OnPlayerDeath();
-        currentHealth = maxHealth;
-        UpdateHealthUI();
+        if (currentScene == "Intro")
+        {
+            SceneManager.LoadScene("Intro");
+        } else{
+            gameManager.OnPlayerDeath();
+            currentHealth = maxHealth;
+            UpdateHealthUI();
+        }  
     }
 
     private void TriggerGameOver()

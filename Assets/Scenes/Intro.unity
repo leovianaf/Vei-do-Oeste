@@ -1763,6 +1763,7 @@ MonoBehaviour:
   enemyTag: Enemy
   enemyText: {fileID: 242593188}
   isDesert: 1
+  activeEnemies: []
 --- !u!114 &678171510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,7 +1784,14 @@ MonoBehaviour:
   mapBossPrefab: {fileID: 0}
   player: {fileID: 1406230253}
   playerSpawnTag: PlayerSpawner
+  cameraController: {fileID: 0}
+  playerHealth: {fileID: 0}
+  playerMovement: {fileID: 0}
+  shopSpawn: {fileID: 0}
+  mapsPlayed: 0
   delayBeforeNewMap: 2
+  isInShop: 0
+  shopUI: []
 --- !u!114 &678171511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3080,11 +3088,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9051149899185863605, guid: c6102a6ddb17ae5489fb70af5f2421b7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.22
+      value: -8.21
       objectReference: {fileID: 0}
     - target: {fileID: 9051149899185863605, guid: c6102a6ddb17ae5489fb70af5f2421b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.47
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 9051149899185863605, guid: c6102a6ddb17ae5489fb70af5f2421b7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4075,7 +4083,7 @@ Transform:
   m_GameObject: {fileID: 1659766528}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.22000012, y: 2.47, z: -10}
+  m_LocalPosition: {x: -8.21, y: 1.42, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4593,7 +4601,7 @@ Transform:
   m_GameObject: {fileID: 1950169759}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22000012, y: 2.47, z: -10}
+  m_LocalPosition: {x: -8.21, y: 1.42, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
