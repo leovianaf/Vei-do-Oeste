@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Rifle
   damage: 50
+  reloadTime: 4
   bulletSpeed: 10
   range: 8
   fireRate: 0.6
-  maxBullets: 2
+  maxBullets: 10
   cost: 2
   bulletPrefab: {fileID: 3226753336997059343, guid: b183caaac2cb3ad4ab94e56227cb526c, type: 3}
   weaponIcon: {fileID: 2920547695714349933, guid: c743e68cd2fb3d54bbf14e822c746b03, type: 3}

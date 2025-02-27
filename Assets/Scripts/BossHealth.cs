@@ -1,12 +1,14 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BossHealth : EnemyHealth
 {
     private BossController bossController;
 
+
     protected override void Start()
     {
-        base.Start();  // Reutiliza a lógica base do EnemyHealth
+        base.Start();  // Reutiliza a lï¿½gica base do EnemyHealth
         bossController = GetComponent<BossController>();
     }
 
@@ -33,9 +35,11 @@ public class BossHealth : EnemyHealth
 
     protected override void Die()
     {
-        base.Die(); // Reutiliza a lógica de EnemyHealth
+        base.Die(); // Reutiliza a lï¿½gica de EnemyHealth
 
+        GameWin.Instance.Win();
         // Adiciona a cutscene final do jogo
         Debug.Log("Boss derrotado!");
     }
+
 }

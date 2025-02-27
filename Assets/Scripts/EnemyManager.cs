@@ -24,7 +24,6 @@ public class EnemyManager : MonoBehaviour
         else
             Destroy(gameObject);
     }
-
     public void InitializeProgress(int totalEnemies)
     {
         totalEnemiesInRoom = totalEnemies;

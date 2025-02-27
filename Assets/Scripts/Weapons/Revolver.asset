@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponName: Revolver
   damage: 10
+  reloadTime: 3
   bulletSpeed: 10
   range: 20
   fireRate: 0.2
-  maxBullets: 1
+  maxBullets: 30
   cost: 0
   bulletPrefab: {fileID: 3226753336997059343, guid: b183caaac2cb3ad4ab94e56227cb526c, type: 3}
   weaponIcon: {fileID: 781155818728307869, guid: c743e68cd2fb3d54bbf14e822c746b03, type: 3}
