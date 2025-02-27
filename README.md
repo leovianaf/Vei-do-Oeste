@@ -22,17 +22,12 @@
 - Pause: Esc
 - Loja de Upgrades: U
 - Loja de Armas: C
-
-
 - Arsenal de armas: I
 - Interagir: E
 
-
 ## Requisitos
-
 - Unity 6000.0.28f1
 - Instalação das dependências
-
 
 ## Conteúdo
 
