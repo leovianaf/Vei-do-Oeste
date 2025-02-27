@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyBullet : MonoBehaviour
 {
@@ -32,15 +33,30 @@ public class EnemyBullet : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            AudioSource playerAudioSource = collision.GetComponent<AudioSource>();
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(bulletDamage);
+
+                if (playerAudioSource != null)
+                {
+                    StartCoroutine(PlayDamageSoundWithDelay(0.1f, playerAudioSource));
+                }
             }
             Destroy(gameObject);
         }
         else if (collision.CompareTag("Wall"))
         {
             Destroy(gameObject);
+        }
+    }
+
+    private IEnumerator PlayDamageSoundWithDelay(float delay, AudioSource audioSource)
+    {
+        yield return new WaitForSeconds(delay);
+        if (audioSource != null && !audioSource.isPlaying) // Evita sobreposição de sons
+        {
+            audioSource.Play();
         }
     }
 }

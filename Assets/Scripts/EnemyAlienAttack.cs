@@ -60,9 +60,14 @@ public class EnemyRangedAttack : MonoBehaviour
             }
 
             PlayerHealth playerHealth = playerTransform.GetComponent<PlayerHealth>();
+            AudioSource playerAudioSource = playerTransform.GetComponent<AudioSource>();
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damageToPlayer);
+                if (playerAudioSource != null)
+                {
+                    StartCoroutine(PlayDamageSoundWithDelay(0.1f, playerAudioSource));
+                }
             }
         }
 
@@ -84,6 +89,15 @@ public class EnemyRangedAttack : MonoBehaviour
             Vector2 shootDirection = (playerTransform.position - firePoint.position).normalized;
             bulletScript.SetDirection(shootDirection);
             bulletScript.SetDamage(damageToPlayer);
+        }
+    }
+
+    private IEnumerator PlayDamageSoundWithDelay(float delay, AudioSource audioSource)
+    {
+        yield return new WaitForSeconds(delay);
+        if (audioSource != null && !audioSource.isPlaying) // Evita sobreposição de sons
+        {
+            audioSource.Play();
         }
     }
 }
