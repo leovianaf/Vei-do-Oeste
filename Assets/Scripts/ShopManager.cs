@@ -34,7 +34,7 @@ public class ShopManager : MonoBehaviour
     {
 /*         if (Input.GetKeyDown(KeyCode.C))
         {
-            Debug.Log("C pressionado!"); // Adicione esta linha
+            Debug.Log("C pressionado!");
             ToggleShop();
         } */
     }
@@ -70,7 +70,7 @@ public class ShopManager : MonoBehaviour
 
             Destroy(weaponButtons[weapon]);
             weaponButtons.Remove(weapon);
-            ShowMessage("Compra realizada!", "#88FFA9");
+            ShowMessage("Compra Realizada!", "#88FFA9");
         }
         else
         {

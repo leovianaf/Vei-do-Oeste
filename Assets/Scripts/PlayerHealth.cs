@@ -107,6 +107,8 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene("Intro");
         } else{
             gameManager.OnPlayerDeath();
+            Shooter.instance.ReloadAmmo();
+            EnemyManager.Instance.ResetEnemiesKilled();
             currentHealth = maxHealth;
             UpdateHealthUI();
         }  
