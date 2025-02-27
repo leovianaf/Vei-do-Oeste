@@ -5491,13 +5491,13 @@ MonoBehaviour:
   upgradeMessageText: {fileID: 1415413574}
   upgradeItems:
   - itemName: Chapeu
-    costs: 02000000030000008c000000c8000000
+    costs: 4b0000006400000096000000c8000000
     currentLevel: 0
   - itemName: Colete
-    costs: 0200000004000000d20000002c010000
+    costs: 6400000096000000d70000002c010000
     currentLevel: 0
   - itemName: Bota
-    costs: 0200000003000000aa000000f0000000
+    costs: 5a0000007d000000af000000e6000000
     currentLevel: 0
   itemNames:
   - {fileID: 2097234212}

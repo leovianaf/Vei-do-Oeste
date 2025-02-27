@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Espingarda
   m_EditorClassIdentifier: 
   weaponName: Espingarda
-  damage: 20
+  damage: 30
   reloadTime: 4
-  bulletSpeed: 10
+  bulletSpeed: 8
   range: 3
-  fireRate: 0.4
-  maxBullets: 2
+  fireRate: 0.8
+  maxBullets: 6
   cost: 50
   bulletPrefab: {fileID: 3226753336997059343, guid: b183caaac2cb3ad4ab94e56227cb526c, type: 3}
   weaponIcon: {fileID: 8101326686158321518, guid: c743e68cd2fb3d54bbf14e822c746b03, type: 3}

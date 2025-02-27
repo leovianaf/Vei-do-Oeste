@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3.5
-  stopDistance: 5
+  stopDistance: 4.5
   retreatDistance: 6.5
 --- !u!114 &6551381930285038331
 MonoBehaviour:
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageToPlayer: 25
   attackCooldown: 1
-  attackRange: 5
+  attackRange: 4.5
   firePoint: {fileID: 3173050832807453290}
   enemyBulletPrefab: {fileID: 7276077050984151001, guid: be37866f95425504db506115e1067740, type: 3}
   useProjectiles: 1
