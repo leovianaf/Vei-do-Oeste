@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
-using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private GameObject shopSpawn;
+    [SerializeField] private GameObject diaryItem;
     private List<GameObject> spawnedEnemies = new List<GameObject>();
 
     private GameObject currentMap;
@@ -26,8 +26,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float delayBeforeNewMap = 2f;
 
     public bool isInShop = false;
-
-    [SerializeField] private TextMeshProUGUI enemyText;
 
     [Header("UI para desativar")]
     [SerializeField] private GameObject[] shopUI;
@@ -78,11 +76,9 @@ public class GameManager : MonoBehaviour
                 player.position = t.position;
                 player.rotation = t.rotation;
             }
-            enemyText.text = "0/1";
 
             return;
         }
-        
         StartCoroutine(LoadNewMapAfterDelay());
     }
 
@@ -96,7 +92,6 @@ public class GameManager : MonoBehaviour
 
     public void LoadRandomMap()
     {
-        enemyText.text = "0/10";
         if (currentMap != null)
         {
             Destroy(currentMap);
@@ -134,8 +129,6 @@ public class GameManager : MonoBehaviour
 
 
     public void OnPlayerDeath() {
-
-        enemyText.text = "0/10";
         player.transform.position = shopSpawn.transform.position;
         Destroy(currentMap);
 
@@ -154,6 +147,8 @@ public class GameManager : MonoBehaviour
         mapsPlayed = 0;
 
         GameState.hasOpenedDiary = false;
+
+        diaryItem.SetActive(true);
     }
 
     public void LoadUI(){
