@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CameraController cameraController;
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private GameObject shopSpawn;
+    private List<GameObject> spawnedEnemies = new List<GameObject>();
 
     private GameObject currentMap;
 
@@ -20,6 +23,11 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
     [SerializeField] private float delayBeforeNewMap = 2f;
+
+    public bool isInShop = false;
+
+    [Header("UI para desativar")]
+    [SerializeField] private GameObject[] shopUI;
 
      void Awake()
     {
@@ -55,8 +63,6 @@ public class GameManager : MonoBehaviour
                 currentMap = null;
             }
             currentMap = Instantiate(mapBossPrefab, Vector3.zero, Quaternion.identity);
-
-            //currentMap.GetComponent<EnemySpawner>().enemies = enemiesToSpawn;
 
             Transform[] children = currentMap.GetComponentsInChildren<Transform>(includeInactive: true);
 
@@ -118,6 +124,33 @@ public class GameManager : MonoBehaviour
             }
         }
         return null;
+    }
+
+
+    public void OnPlayerDeath() {
+        player.transform.position = shopSpawn.transform.position;
+        Destroy(currentMap);
+
+        EnemyManager enemyManager = GetComponent<EnemyManager>();
+        spawnedEnemies = enemyManager.activeEnemies;
+
+        foreach (var enemy in spawnedEnemies) {
+            Destroy(enemy);
+        }
+        spawnedEnemies.Clear();
+
+        foreach (var gameObjectUI in shopUI){
+            gameObjectUI.SetActive(false);
+        }
+        isInShop = true;
+        mapsPlayed = 0;
+
+    }
+
+    public void LoadUI(){
+        foreach (var gameObjectUI in shopUI){
+            gameObjectUI.SetActive(true);
+        }
     }
 
 }

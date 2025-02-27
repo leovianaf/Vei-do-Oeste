@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
 
     // GameUI
     public GameObject gameOverScreen;
-
+    [SerializeField] private GameManager gameManager;
     void Start()
     {
         currentHealth = maxHealth;
@@ -62,13 +62,13 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        isDead = true;
+        /* isDead = true;
         animator.SetTrigger("Die");
 
         if (playerMovement != null)
         {
             playerMovement.enabled = false;
-        }
+        } */
 
         StartCoroutine(Respawn());
     }
@@ -99,7 +99,10 @@ public class PlayerHealth : MonoBehaviour
             playerMovement.enabled = true;
         } */
         yield return new WaitForSeconds(0.85f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
+        gameManager.OnPlayerDeath();
+        currentHealth = maxHealth;
+        UpdateHealthUI();
     }
 
     private void TriggerGameOver()

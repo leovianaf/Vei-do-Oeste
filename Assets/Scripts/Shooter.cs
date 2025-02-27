@@ -6,6 +6,7 @@ public class Shooter : MonoBehaviour
 {
     //public GameObject bulletPrefab;
     public Transform firePoint;
+    public GameObject mouseAim;
     //public float bulletSpeed = 10f;
     //public float shootCooldown = 0.5f;  // Tempo de cooldown entre os tiros
     [HideInInspector] public float bulletSpeed;
@@ -28,6 +29,7 @@ public class Shooter : MonoBehaviour
     private bool isReloading = false;
 
     public TMP_Text ammoText; // UI de munição
+    [SerializeField] private GameManager gameManager;
 
     void Start()
     {
@@ -42,10 +44,15 @@ public class Shooter : MonoBehaviour
     void Update()
     {
         // Bloqueia o tiro se qualquer painel estiver aberto
-        if (ShopManager.IsShopOpen || InventoryManager.IsInventoryOpen || UpgradeShopManager.IsUpgradeShopOpen)
+        if (ShopManager.IsShopOpen || InventoryManager.IsInventoryOpen || UpgradeShopManager.IsUpgradeShopOpen || gameManager.isInShop)
         {
             animator.SetBool("Shoot", false); // Reseta a animação
+            mouseAim.gameObject.SetActive(false);
             return;
+        }
+
+        if(!gameManager.isInShop){
+            mouseAim.gameObject.SetActive(true);
         }
         
         // Verifica se o jogador pode atirar
