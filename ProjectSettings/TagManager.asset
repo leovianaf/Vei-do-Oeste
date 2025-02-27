@@ -9,6 +9,7 @@ TagManager:
   - PlayerSpawner
   - Enemy
   - DiaryItem
+  - DiaryDialogueBox
   layers:
   - Default
   - TransparentFX

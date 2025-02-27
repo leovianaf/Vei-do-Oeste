@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private GameObject shopSpawn;
+    [SerializeField] private GameObject diaryItem;
     private List<GameObject> spawnedEnemies = new List<GameObject>();
 
     private GameObject currentMap;
@@ -146,6 +147,8 @@ public class GameManager : MonoBehaviour
         mapsPlayed = 0;
 
         GameState.hasOpenedDiary = false;
+
+        diaryItem.SetActive(true);
     }
 
     public void LoadUI(){

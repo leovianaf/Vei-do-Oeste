@@ -23,7 +23,12 @@ public class Dialogue : MonoBehaviour
     [SerializeField] public string[] diaryDialoguesSet5;
     [SerializeField] public string[] diaryDialoguesSet6;
 
-    void Start()
+    void OnEnable()
+    {
+        InitializeDialogue();
+    }
+
+    private void InitializeDialogue()
     {
         diaryItem = FindObjectOfType<DiaryItem>();
         Time.timeScale = 0f;
@@ -34,7 +39,9 @@ public class Dialogue : MonoBehaviour
         textComponent.text = string.Empty;
         textComponent.font = customFont;
 
-        if (SceneManager.GetActiveScene().name == "DiaryCutscene")
+        Debug.Log("hasOpenedDiary: " + GameState.diaryDialogueIndex);
+
+        if (GameState.hasOpenedDiary)
         {
             if (GameState.diaryDialogueIndex == 0)
             {
@@ -60,12 +67,6 @@ public class Dialogue : MonoBehaviour
             {
                 lines = diaryDialoguesSet6;
             }
-            else
-            {
-                SceneManager.LoadScene(GameState.previousScene);
-            }
-
-            GameState.diaryDialogueIndex++;
         }
 
         StartDialogue();
@@ -124,9 +125,14 @@ public class Dialogue : MonoBehaviour
         advanceDialogueText.SetActive(false);
         Time.timeScale = 1f;
 
-        if (SceneManager.GetActiveScene().name == "DiaryCutscene")
+        if (GameState.hasOpenedDiary)
         {
-            SceneManager.LoadScene(GameState.previousScene);
+            GameState.diaryDialogueIndex++;
+            GameObject diaryDialogueBox = GameObject.Find("DiaryDialogueBox");
+            if (diaryDialogueBox != null)
+            {
+                diaryDialogueBox.SetActive(false);
+            }
         }
     }
 }
