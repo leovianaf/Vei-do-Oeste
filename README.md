@@ -2,11 +2,16 @@
 
 ## Informações:
 
+* Dayanne Carolina e Silva Portela - dayanne.carolina@ufrpe.br
 * Leonardo da Silva Viana Filho - leonardo.vianafilho@ufrpe.br
+* Leonardo Henrique Cavalcanti Juvenal - leonardo.henriquecavalcanti@ufrpe.br
+* Pedro Saturnino Arruda da Silva - pedro.saturnino@ufrpe.br
+* Raphael Silvestre Barbosa - raphael.sbarbosa@ufrpe.br
+* Stella Nazário Anacleto de Oliveira - stella.oliveira@ufrpe.br
 
 ## Objetivo
 
-Jogo com objetivo de estudo individual de mecânica e Game Development, o objetivo do jogador é sobreviver aos esqueletos que vão ficando mais rápidos e vindo em maior quanidade ao longo do tempo.
+É um jogo Rogue Like, então seu objetivo é avançar todas as fases e ao final derrotar o Boss para vencer. A cada morte o jogador volta para uma loja para comprar outras armas ou realizar upgrades nos itens.
 
 ## **Jogue agora!**
 [Link para o jogo no WebGL](https://play.unity.com/en/games/963ce0c2-1fa0-4ef9-a3fc-e4408e7a85d9/webgl-builds)
@@ -15,6 +20,10 @@ Jogo com objetivo de estudo individual de mecânica e Game Development, o objeti
 - Movimento: WASD
 - Tiro: J
 - Pause: Esc
+- Loja de Upgrades: U
+- Loja de Armas: C
+- Arsenal de armas: I
+- Interagir: E
 
 ## Requisitos
 
