@@ -145,6 +145,7 @@ public class GameManager : MonoBehaviour
         isInShop = true;
         mapsPlayed = 0;
 
+        GameState.hasOpenedDiary = false;
     }
 
     public void LoadUI(){

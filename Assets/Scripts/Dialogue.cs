@@ -14,11 +14,18 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
 
     private int currentLineIndex;
-    private CutsceneManager cutsceneManager;
+    private DiaryItem diaryItem;
+
+    [SerializeField] public string[] diaryDialoguesSet1;
+    [SerializeField] public string[] diaryDialoguesSet2;
+    [SerializeField] public string[] diaryDialoguesSet3;
+    [SerializeField] public string[] diaryDialoguesSet4;
+    [SerializeField] public string[] diaryDialoguesSet5;
+    [SerializeField] public string[] diaryDialoguesSet6;
 
     void Start()
     {
-        cutsceneManager = FindObjectOfType<CutsceneManager>();
+        diaryItem = FindObjectOfType<DiaryItem>();
         Time.timeScale = 0f;
 
         dialoguePanel.SetActive(true);
@@ -27,11 +34,47 @@ public class Dialogue : MonoBehaviour
         textComponent.text = string.Empty;
         textComponent.font = customFont;
 
+        if (SceneManager.GetActiveScene().name == "DiaryCutscene")
+        {
+            if (GameState.diaryDialogueIndex == 0)
+            {
+                lines = diaryDialoguesSet1;
+            }
+            else if (GameState.diaryDialogueIndex == 1)
+            {
+                lines = diaryDialoguesSet2;
+            }
+            else if (GameState.diaryDialogueIndex == 2)
+            {
+                lines = diaryDialoguesSet3;
+            }
+            else if (GameState.diaryDialogueIndex == 3)
+            {
+                lines = diaryDialoguesSet4;
+            }
+            else if (GameState.diaryDialogueIndex == 4)
+            {
+                lines = diaryDialoguesSet5;
+            }
+            else if (GameState.diaryDialogueIndex == 5)
+            {
+                lines = diaryDialoguesSet6;
+            }
+            else
+            {
+                SceneManager.LoadScene(GameState.previousScene);
+            }
+
+            GameState.diaryDialogueIndex++;
+        }
+
         StartDialogue();
     }
 
     void Update()
     {
+        if (lines == null || lines.Length == 0) return;
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (textComponent.text == lines[currentLineIndex])
@@ -56,7 +99,6 @@ public class Dialogue : MonoBehaviour
     {
         foreach (char c in lines[currentLineIndex].ToCharArray())
         {
-            // Debug.Log(c);
             textComponent.text += c;
             yield return new WaitForSecondsRealtime(textSpeed);
         }
@@ -82,9 +124,9 @@ public class Dialogue : MonoBehaviour
         advanceDialogueText.SetActive(false);
         Time.timeScale = 1f;
 
-        if (cutsceneManager != null && SceneManager.GetActiveScene().name == "DiaryCutscene")
+        if (SceneManager.GetActiveScene().name == "DiaryCutscene")
         {
-            cutsceneManager.LoadNextScene();
+            SceneManager.LoadScene(GameState.previousScene);
         }
     }
 }
