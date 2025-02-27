@@ -8742,8 +8742,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b8f40031456f3d643b3028ebdda62803, type: 3}
-  m_Resource: {fileID: 8300000, guid: b8f40031456f3d643b3028ebdda62803, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 1629d9a1a1abdf341b794da0829df68f, type: 3}
+  m_Resource: {fileID: 8300000, guid: 1629d9a1a1abdf341b794da0829df68f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -10240,7 +10240,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Conseguiu hein :D
+  m_text: Ganhasse visse!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d08b45349623e5345b0edaa53f84af78, type: 2}
   m_sharedMaterial: {fileID: -175568451362103998, guid: d08b45349623e5345b0edaa53f84af78, type: 2}
