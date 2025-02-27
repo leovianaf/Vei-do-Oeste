@@ -32,6 +32,7 @@ public class Shooter : MonoBehaviour
 
     public TMP_Text ammoText; // UI de munição
     [SerializeField] private GameManager gameManager;
+    public GameObject ammoLoading;
 
     void Awake()
     {
@@ -59,6 +60,9 @@ public class Shooter : MonoBehaviour
             {
                 animator.SetBool("Shoot", false); // Reseta a animação
                 mouseAim.gameObject.SetActive(false);
+                currentAmmo = PlayerWeapon.instance.currentWeapon.maxBullets;
+                maxAmmo = PlayerWeapon.instance.currentWeapon.maxBullets;
+                UpdateAmmoUI();
                 return;
             }
 
@@ -71,7 +75,7 @@ public class Shooter : MonoBehaviour
         // Verifica se o jogador pode atirar
         if (Time.time - lastShootTime >= shootCooldown && Input.GetMouseButtonDown(0)) // Botão esquerdo do mouse
         {
-            if (currentAmmo >= PlayerWeapon.instance.currentWeapon.maxBullets && !isReloading)
+            if (currentAmmo >= 0 && !isReloading)
             {
                 SetShootDirection();
                 Shoot();
@@ -85,7 +89,7 @@ public class Shooter : MonoBehaviour
 
         if (currentAmmo == 0 && !isReloading)
         {
-            StartCoroutine(Reload());
+            StartCoroutine(Reload(PlayerWeapon.instance.currentWeapon.reloadTime));
         }
 
         // Atualiza o peso da camada Shooting corretamente
@@ -151,7 +155,7 @@ public class Shooter : MonoBehaviour
         bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
         // Consome munição
-        currentAmmo -= PlayerWeapon.instance.currentWeapon.maxBullets;
+        currentAmmo -= 1;
         UpdateAmmoUI();
 
         // Após o disparo, resetar o aumento de dano
@@ -173,19 +177,23 @@ public class Shooter : MonoBehaviour
         damageBoost = 0f; // Reseta o aumento de dano de volta para 0
     }
 
-    IEnumerator Reload()
+    IEnumerator Reload(int reloadTime)
     {
+        ammoLoading.SetActive(true);
+        ammoText.gameObject.SetActive(false);
         isReloading = true;
         Debug.Log("Recarregando...");
         
         if (reloadSound != null)
             reloadSound.Play();
         
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(reloadTime);
 
         currentAmmo = maxAmmo;
         isReloading = false;
         UpdateAmmoUI();
+        ammoLoading.SetActive(false);
+        ammoText.gameObject.SetActive(true);
         Debug.Log("Recarga concluída!");
     }
 
