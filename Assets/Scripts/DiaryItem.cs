@@ -5,6 +5,7 @@ public class DiaryItem : MonoBehaviour
 {
     private bool isPlayerNearby = false;
     public GameObject diaryText;
+    public GameObject diaryDialogueBox;
 
     void Update()
     {
@@ -16,25 +17,15 @@ public class DiaryItem : MonoBehaviour
 
     private void StartCutscene()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            GameState.lastPlayerPosition = player.transform.position;
-            GameState.shouldRestorePosition = true;
-        }
-
-        GameState.previousScene = SceneManager.GetActiveScene().name;
-
         GameState.hasOpenedDiary = true;
 
         gameObject.SetActive(false);
-
-        SceneManager.LoadScene("DiaryCutscene");
+        diaryDialogueBox.SetActive(true);
     }
 
     void Start()
     {
-        if (GameState.hasOpenedDiary)
+        if (GameState.hasOpenedDiary && GameState.diaryDialogueIndex >= 6)
         {
             gameObject.SetActive(false);
         }
