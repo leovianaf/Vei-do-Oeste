@@ -1,22 +1,24 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public static PlayerHealth instance;
     public Slider slider;
     public int maxHealth = 150;
     private int currentHealth;
     private Animator animator;
     private bool isDead = false;
+    public float damageReduction = 0f;
 
     public Transform respawnPoint;  // Ponto de respawn do jogador
     private PlayerMovement playerMovement;
 
     // GameUI
-    public GameObject[] heartObjects; // Array de objetos de cora��o no GameUI
     public GameObject gameOverScreen;
-
+    [SerializeField] private GameManager gameManager;
     void Start()
     {
         currentHealth = maxHealth;
@@ -24,21 +26,27 @@ public class PlayerHealth : MonoBehaviour
         slider.maxValue = maxHealth;
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
-
         UpdateHealthUI();
+    }
+
+    private void UpdateHealthUI()
+    {
+        if (slider != null)
+        {
+            slider.value = currentHealth;
+        }
     }
 
     public void TakeDamage(int damage)
     {
         if (isDead) return;
-
-        currentHealth -= damage;
-        slider.value = currentHealth;
+        int reducedDamage = Mathf.RoundToInt(damage * (1 - damageReduction));
+        currentHealth -= reducedDamage;
 
         if (currentHealth <= 0)
         {
             currentHealth = 0;
-            LoseHeart();
+            Die();
         }
 
         UpdateHealthUI();
@@ -49,45 +57,26 @@ public class PlayerHealth : MonoBehaviour
         if (isDead) return;
 
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
-        slider.value = currentHealth;
         UpdateHealthUI();
-    }
-
-    private void LoseHeart()
-    {
-        int remainingHearts = currentHealth / 50;
-
-        if (remainingHearts < heartObjects.Length)
-        {
-            heartObjects[remainingHearts].SetActive(false); // Desativa o cora��o perdido
-        }
-
-        if (remainingHearts <= 0)
-        {
-            TriggerGameOver(); // Game Over quando perder todos os cora��es
-        }
-        else
-        {
-            Die(); // Respawn ao perder um cora��o
-        }
     }
 
     private void Die()
     {
-        isDead = true;
+        /* isDead = true;
         animator.SetTrigger("Die");
 
         if (playerMovement != null)
         {
             playerMovement.enabled = false;
-        }
+        } */
 
         StartCoroutine(Respawn());
     }
 
     private IEnumerator Respawn()
     {
-        while (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Dies") &&
+
+        /* while (animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Dies") &&
                animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
         {
             Debug.Log("Estado atual: " + animator.GetCurrentAnimatorStateInfo(0).IsName("Player_Dies"));
@@ -97,6 +86,7 @@ public class PlayerHealth : MonoBehaviour
 
         yield return new WaitForSeconds(0.85f);
 
+        Time.timeScale = 1;
         transform.position = respawnPoint.position;
         currentHealth = Mathf.Max(currentHealth, 50); // Garantir ao menos 50 de vida ap�s respawn
         slider.value = currentHealth;
@@ -107,9 +97,21 @@ public class PlayerHealth : MonoBehaviour
         if (playerMovement != null)
         {
             playerMovement.enabled = true;
-        }
+        } */
+        yield return new WaitForSeconds(0.85f);
 
-        UpdateHealthUI();
+        string currentScene = SceneManager.GetActiveScene().name;
+        
+        if (currentScene == "Intro")
+        {
+            SceneManager.LoadScene("Intro");
+        } else{
+            gameManager.OnPlayerDeath();
+            Shooter.instance.ReloadAmmo();
+            EnemyManager.Instance.ResetEnemiesKilled();
+            currentHealth = maxHealth;
+            UpdateHealthUI();
+        }  
     }
 
     private void TriggerGameOver()
@@ -117,15 +119,5 @@ public class PlayerHealth : MonoBehaviour
         isDead = true;
         gameOverScreen.SetActive(true);
         Time.timeScale = 0;
-    }
-
-    public void UpdateHealthUI()
-    {
-        int heartsToDisplay = currentHealth / 50;
-
-        for (int i = 0; i < heartObjects.Length; i++)
-        {
-            heartObjects[i].SetActive(i < heartsToDisplay);
-        }
     }
 }

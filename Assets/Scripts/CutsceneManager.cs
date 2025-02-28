@@ -3,10 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class CutsceneManager : MonoBehaviour
 {
-    public string nextSceneName; // Nome da próxima cena
-
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadScene("GameScene");
     }
 }

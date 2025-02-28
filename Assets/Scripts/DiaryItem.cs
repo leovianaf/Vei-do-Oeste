@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class DiaryItem : MonoBehaviour
 {
     private bool isPlayerNearby = false;
+    public GameObject diaryText;
+    public GameObject diaryDialogueBox;
 
     void Update()
     {
@@ -15,17 +17,23 @@ public class DiaryItem : MonoBehaviour
 
     private void StartCutscene()
     {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            GameState.lastPlayerPosition = player.transform.position;
-            GameState.shouldRestorePosition = true;
-        }
-        SceneManager.LoadScene("DiaryCutscene");
+        GameState.hasOpenedDiary = true;
+
+        gameObject.SetActive(false);
+        diaryDialogueBox.SetActive(true);
     }
 
     void Start()
     {
+        if (GameState.hasOpenedDiary && GameState.diaryDialogueIndex >= 6)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
+
         if (GameState.shouldRestorePosition)
         {
             GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -37,11 +45,17 @@ public class DiaryItem : MonoBehaviour
         }
     }
 
+    public void ReturnToPreviousScene()
+    {
+        SceneManager.LoadScene(GameState.previousScene);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerNearby = true;
+            diaryText.SetActive(true);
         }
     }
 
@@ -50,6 +64,7 @@ public class DiaryItem : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerNearby = false;
+            diaryText.SetActive(false);
         }
     }
 }

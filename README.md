@@ -2,11 +2,16 @@
 
 ## Informações:
 
+* Dayanne Carolina e Silva Portela - dayanne.carolina@ufrpe.br
 * Leonardo da Silva Viana Filho - leonardo.vianafilho@ufrpe.br
+* Leonardo Henrique Cavalcanti Juvenal - leonardo.henriquecavalcanti@ufrpe.br
+* Pedro Saturnino Arruda da Silva - pedro.saturnino@ufrpe.br
+* Raphael Silvestre Barbosa - raphael.sbarbosa@ufrpe.br
+* Stella Nazário Anacleto de Oliveira - stella.oliveira@ufrpe.br
 
 ## Objetivo
 
-Jogo com objetivo de estudo individual de mecânica e Game Development, o objetivo do jogador é sobreviver aos esqueletos que vão ficando mais rápidos e vindo em maior quanidade ao longo do tempo.
+É um jogo Rogue Like, então seu objetivo é avançar todas as fases e ao final derrotar o Boss para vencer. A cada morte o jogador volta para uma loja para comprar outras armas ou realizar upgrades nos itens.
 
 ## **Jogue agora!**
 [Link para o jogo no WebGL](https://play.unity.com/en/games/963ce0c2-1fa0-4ef9-a3fc-e4408e7a85d9/webgl-builds)
@@ -15,16 +20,22 @@ Jogo com objetivo de estudo individual de mecânica e Game Development, o objeti
 - Movimento: WASD
 - Tiro: J
 - Pause: Esc
+- Loja de Upgrades: U
+- Loja de Armas: C
+- Arsenal de armas: I
+- Interagir: E
 
 ## Requisitos
-
 - Unity 6000.0.28f1
 - Instalação das dependências
 
 ## Conteúdo
 
-![Thumbnail_Vei_do_Oeste](https://github.com/user-attachments/assets/33375084-f7b4-43a7-8eb9-512b5f55e002)
-![Inicio_Vei_do_Oeste](https://github.com/user-attachments/assets/dc2c19b4-6a03-4133-8a88-eed45de29dfd)
-![Atacando_Vei_do_Oeste](https://github.com/user-attachments/assets/c583906a-80de-4124-b6a5-33b71d5c688a)
-![Pause_Vei_do_Oeste](https://github.com/user-attachments/assets/55f5e2c1-c5ab-486a-bccd-fa81887760c6)
-![Game_Over_Vei_do_Oeste](https://github.com/user-attachments/assets/8e24b2e4-3843-4c92-86c4-f3e0e25f4367)
+![Menu_Vei_do_Oeste](https://github.com/user-attachments/assets/11329f37-5322-4f0c-9172-21a9477ed269)
+![Pause_Vei_do_Oeste](https://github.com/user-attachments/assets/b6789c71-2c7d-4c17-8ac7-43c4b66790dd)
+![Deserto_Vei_do_Oeste](https://github.com/user-attachments/assets/54c24c39-3ece-42a2-bcbe-2db038d687a1)
+![Recebendo_ataque_Vei_do_Oeste](https://github.com/user-attachments/assets/ee73cde1-5ddd-4108-9318-5673a25498d7)
+![Espaco_Vei_do_Oeste](https://github.com/user-attachments/assets/592df9a1-b565-4211-b6ab-3a41c71b9c6e)
+![Espaco2_Vei_do_Oeste](https://github.com/user-attachments/assets/4e390886-5c5c-4cf4-ae88-4098138ce19a)
+![Final_Vei_do_Oeste](https://github.com/user-attachments/assets/a6d29635-6970-4306-ba75-40dbe8819145)
+

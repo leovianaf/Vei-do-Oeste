@@ -32,11 +32,11 @@ public class ShopManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+/*         if (Input.GetKeyDown(KeyCode.C))
         {
-            Debug.Log("C pressionado!"); // Adicione esta linha
+            Debug.Log("C pressionado!");
             ToggleShop();
-        }
+        } */
     }
 
     void PopulateShop()
@@ -65,10 +65,12 @@ public class ShopManager : MonoBehaviour
         if (CurrencyManager.instance.SpendCoins(weapon.cost))
         {
             Debug.Log("Compra bem-sucedida!");
+            
             InventoryManager.instance.AddWeapon(weapon);
+
             Destroy(weaponButtons[weapon]);
             weaponButtons.Remove(weapon);
-            ShowMessage("Compra realizada!", "#88FFA9");
+            ShowMessage("Compra Realizada!", "#88FFA9");
         }
         else
         {

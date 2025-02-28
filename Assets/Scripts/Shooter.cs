@@ -1,14 +1,19 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Shooter : MonoBehaviour
 {
+    public static Shooter instance;
     //public GameObject bulletPrefab;
     public Transform firePoint;
+    public GameObject mouseAim;
     //public float bulletSpeed = 10f;
     //public float shootCooldown = 0.5f;  // Tempo de cooldown entre os tiros
     [HideInInspector] public float bulletSpeed;
     [HideInInspector] public float shootCooldown;
+    [SerializeField] private AudioSource reloadSound;
     public GameObject bulletPrefab;
     private float lastShootTime = 0f;    // Armazena o tempo do último tiro
     public float shootDelay = 0.2f;     // Delay para a bala sair após pressionar o botão
@@ -21,29 +26,70 @@ public class Shooter : MonoBehaviour
 
     private int lastShootDirection = 2; // 2 = Baixo por padrão
     private bool isShooting = false; // Controla o estado da camada Shooting
+    private int currentAmmo;
+    private int maxAmmo = 30;  // Munição inicial máxima
+    private bool isReloading = false;
+
+    public TMP_Text ammoText; // UI de munição
+    [SerializeField] private GameManager gameManager;
+    public GameObject ammoLoading;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
 
     void Start()
     {
         animator = GetComponent<Animator>();
         mainCamera = Camera.main;
         playerMovement = GetComponent<PlayerMovement>(); // Referência ao movimento do player
+
+        currentAmmo = maxAmmo;
+        UpdateAmmoUI();
     }
 
     void Update()
     {
         // Bloqueia o tiro se qualquer painel estiver aberto
-        if (ShopManager.IsShopOpen || InventoryManager.IsInventoryOpen)
-        {
-            animator.SetBool("Shoot", false); // Reseta a animação
-            return;
+        if(SceneManager.GetActiveScene().name == "GameScene"){
+            if (ShopManager.IsShopOpen || InventoryManager.IsInventoryOpen || UpgradeShopManager.IsUpgradeShopOpen || gameManager.isInShop)
+            {
+                animator.SetBool("Shoot", false); // Reseta a animação
+                mouseAim.gameObject.SetActive(false);
+                currentAmmo = PlayerWeapon.instance.currentWeapon.maxBullets;
+                maxAmmo = PlayerWeapon.instance.currentWeapon.maxBullets;
+                UpdateAmmoUI();
+                return;
+            }
+
+            if(!gameManager.isInShop){
+                mouseAim.gameObject.SetActive(true);
+            }
         }
+        
         
         // Verifica se o jogador pode atirar
         if (Time.time - lastShootTime >= shootCooldown && Input.GetMouseButtonDown(0)) // Botão esquerdo do mouse
         {
-            SetShootDirection();
-            Shoot();
-            lastShootTime = Time.time;
+            if (currentAmmo >= 0 && !isReloading)
+            {
+                SetShootDirection();
+                Shoot();
+                lastShootTime = Time.time;
+            }
+            else
+            {
+                Debug.Log("Sem munição! Pressione 'R' para recarregar.");
+            }
+        }
+
+        if (currentAmmo == 0 && !isReloading)
+        {
+            StartCoroutine(Reload(PlayerWeapon.instance.currentWeapon.reloadTime));
         }
 
         // Atualiza o peso da camada Shooting corretamente
@@ -108,6 +154,10 @@ public class Shooter : MonoBehaviour
         float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
         bullet.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
+        // Consome munição
+        currentAmmo -= 1;
+        UpdateAmmoUI();
+
         // Após o disparo, resetar o aumento de dano
         ResetDamageBoost();
 
@@ -125,6 +175,41 @@ public class Shooter : MonoBehaviour
     private void ResetDamageBoost()
     {
         damageBoost = 0f; // Reseta o aumento de dano de volta para 0
+    }
+
+    IEnumerator Reload(int reloadTime)
+    {
+        ammoLoading.SetActive(true);
+        ammoText.gameObject.SetActive(false);
+        isReloading = true;
+        Debug.Log("Recarregando...");
+        
+        if (reloadSound != null)
+            reloadSound.Play();
+        
+        yield return new WaitForSeconds(reloadTime);
+
+        currentAmmo = maxAmmo;
+        isReloading = false;
+        UpdateAmmoUI();
+        ammoLoading.SetActive(false);
+        ammoText.gameObject.SetActive(true);
+        Debug.Log("Recarga concluída!");
+    }
+
+    public void ReloadAmmo()
+    {
+        currentAmmo = maxAmmo;
+        UpdateAmmoUI();
+        Debug.Log("Munição recarregada no respawn!");
+    }
+
+    void UpdateAmmoUI()
+    {
+        if (ammoText != null)
+        {
+            ammoText.text = currentAmmo + "/" + maxAmmo;
+        }
     }
 
     public void UpdateWeaponStats(Weapon weapon)

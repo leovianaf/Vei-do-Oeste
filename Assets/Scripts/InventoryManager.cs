@@ -41,11 +41,11 @@ public class InventoryManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+/*         if (Input.GetKeyDown(KeyCode.I))
         {
             Debug.Log("I pressionado!"); // Adicione esta linha
             ToggleInventory();
-        }
+        } */
     }
 
     public void AddWeapon(Weapon weapon)
@@ -54,7 +54,7 @@ public class InventoryManager : MonoBehaviour
         slot.GetComponent<InventoryWeaponSlot>().Initialize(weapon);
     }
 
-    void ToggleInventory()
+    public void ToggleInventory()
     {
         inventoryPanel.SetActive(!inventoryPanel.activeSelf);
         IsInventoryOpen = inventoryPanel.activeSelf;

@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - PlayerSpawner
   - Enemy
+  - DiaryItem
   layers:
   - Default
   - TransparentFX

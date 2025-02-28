@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyCollision : MonoBehaviour
 {
@@ -10,10 +11,12 @@ public class EnemyCollision : MonoBehaviour
     public float stunChance = 0.5f;
 
     private EnemyHealth enemyHealth;
+    private Animator animator;
 
     void Start()
     {
         enemyHealth = GetComponent<EnemyHealth>();
+        animator = GetComponent<Animator>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -26,6 +29,7 @@ public class EnemyCollision : MonoBehaviour
             PlayerMovement playerMovement = collision.gameObject.GetComponent<PlayerMovement>();
             AudioSource playerAudioSource = collision.gameObject.GetComponent<AudioSource>();
 
+            animator.SetTrigger("Attack");
 
             if (playerHealth != null)
             {
@@ -34,7 +38,10 @@ public class EnemyCollision : MonoBehaviour
                     playerHealth.TakeDamage(damageToPlayer);
                     lastDamageTime = Time.time;
 
-                    PlayDamageSound(playerAudioSource);
+                    if (playerAudioSource != null)
+                    {
+                        StartCoroutine(PlayDamageSoundWithDelay(0.1f, playerAudioSource));
+                    }
 
                     // 50% de chance de atordoar o player, caso o inimigo tenha essa habilidade
                     if (canStunPlayer && Random.value <= stunChance)
@@ -46,8 +53,9 @@ public class EnemyCollision : MonoBehaviour
         }
     }
 
-    private void PlayDamageSound(AudioSource audioSource)
+    private IEnumerator PlayDamageSoundWithDelay(float delay, AudioSource audioSource)
     {
+        yield return new WaitForSeconds(delay);
         if (audioSource != null && !audioSource.isPlaying) // Evita sobreposição de sons
         {
             audioSource.Play();
