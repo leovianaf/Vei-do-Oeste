@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject shopSpawn;
     [SerializeField] private GameObject diaryItem;
     private List<GameObject> spawnedEnemies = new List<GameObject>();
+    private List<GameObject> spawnedBullets = new List<GameObject>();
 
     private GameObject currentMap;
 
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float delayBeforeNewMap = 2f;
 
     public bool isInShop = false;
+    [SerializeField] private TextMeshProUGUI enemyText;
 
     [Header("UI para desativar")]
     [SerializeField] private GameObject[] shopUI;
@@ -55,31 +58,36 @@ public class GameManager : MonoBehaviour
  
     public void LoadNextMap()
     {
-        mapsPlayed++;
-        if(mapsPlayed >= 2){
+        if(SceneManager.GetActiveScene().name == "GameScene"){
+            enemyText.text = "0/10";
+            mapsPlayed++;
+            if(mapsPlayed >= 2){
 
-            if (currentMap != null)
-            {
-                Destroy(currentMap);
-                currentMap = null;
+                if (currentMap != null)
+                {
+                    Destroy(currentMap);
+                    currentMap = null;
+                }
+                currentMap = Instantiate(mapBossPrefab, Vector3.zero, Quaternion.identity);
+
+                Transform[] children = currentMap.GetComponentsInChildren<Transform>(includeInactive: true);
+
+                Transform t = FindWithTag(children, "PlayerSpawner");
+                
+                Transform playerSpawn = GameObject.FindGameObjectWithTag("PlayerSpawner").transform;
+
+                if (playerSpawn != null && player != null)
+                {
+                    player.position = t.position;
+                    player.rotation = t.rotation;
+                }
+                enemyText.text = "0/1";
+
+
+                return;
             }
-            currentMap = Instantiate(mapBossPrefab, Vector3.zero, Quaternion.identity);
-
-            Transform[] children = currentMap.GetComponentsInChildren<Transform>(includeInactive: true);
-
-            Transform t = FindWithTag(children, "PlayerSpawner");
-            
-            Transform playerSpawn = GameObject.FindGameObjectWithTag("PlayerSpawner").transform;
-
-            if (playerSpawn != null && player != null)
-            {
-                player.position = t.position;
-                player.rotation = t.rotation;
-            }
-
-            return;
+            StartCoroutine(LoadNewMapAfterDelay());
         }
-        StartCoroutine(LoadNewMapAfterDelay());
     }
 
     private IEnumerator LoadNewMapAfterDelay()
@@ -92,6 +100,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadRandomMap()
     {
+        
         if (currentMap != null)
         {
             Destroy(currentMap);
@@ -129,11 +138,23 @@ public class GameManager : MonoBehaviour
 
 
     public void OnPlayerDeath() {
+        enemyText.text = "0/10";
         player.transform.position = shopSpawn.transform.position;
         Destroy(currentMap);
 
         EnemyManager enemyManager = GetComponent<EnemyManager>();
         spawnedEnemies = enemyManager.activeEnemies;
+
+        GameObject[] bullets = GameObject.FindGameObjectsWithTag("Bullet");
+        GameObject[] heals = GameObject.FindGameObjectsWithTag("Heal");
+
+        foreach (GameObject bullet in bullets){
+            Destroy(bullet);
+        }
+
+        foreach (GameObject heal in heals){
+            Destroy(heal);
+        }
 
         foreach (var enemy in spawnedEnemies) {
             Destroy(enemy);

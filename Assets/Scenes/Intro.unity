@@ -1924,6 +1924,7 @@ MonoBehaviour:
   playerHealth: {fileID: 0}
   playerMovement: {fileID: 0}
   shopSpawn: {fileID: 0}
+  diaryItem: {fileID: 0}
   mapsPlayed: 0
   delayBeforeNewMap: 2
   isInShop: 0

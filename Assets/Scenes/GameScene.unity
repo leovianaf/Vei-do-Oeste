@@ -1116,6 +1116,7 @@ MonoBehaviour:
   mapsPlayed: 0
   delayBeforeNewMap: 2
   isInShop: 0
+  enemyText: {fileID: 2072685631}
   shopUI:
   - {fileID: 882462783}
   - {fileID: 1188315370}
@@ -5815,13 +5816,13 @@ MonoBehaviour:
   upgradeMessageText: {fileID: 1415413574}
   upgradeItems:
   - itemName: Chapeu
-    costs: 4b0000006400000096000000c8000000
+    costs: 2d000000500000007d000000c8000000
     currentLevel: 0
   - itemName: Colete
-    costs: 6400000096000000d70000002c010000
+    costs: 3c00000082000000b4000000fa000000
     currentLevel: 0
   - itemName: Bota
-    costs: 5a0000007d000000af000000e6000000
+    costs: 370000005f00000078000000c8000000
     currentLevel: 0
   itemNames:
   - {fileID: 2097234212}
@@ -9414,7 +9415,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 1629d9a1a1abdf341b794da0829df68f, type: 3}
   m_Resource: {fileID: 8300000, guid: 1629d9a1a1abdf341b794da0829df68f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
