@@ -1,5 +1,8 @@
+using System.Collections;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class BossHealth : EnemyHealth
 {
@@ -36,10 +39,9 @@ public class BossHealth : EnemyHealth
     protected override void Die()
     {
         base.Die(); // Reutiliza a l�gica de EnemyHealth
-
-        GameWin.Instance.Win();
-        // Adiciona a cutscene final do jogo
+        GameWin.Instance.LoadWinScene();
         Debug.Log("Boss derrotado!");
     }
+
 
 }

@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DiaryCutscene.unity
     guid: d573544f0c07a4c9a9218e53469d8119
+  - enabled: 1
+    path: Assets/Scenes/WinScene.unity
+    guid: 112e0bc293877b8458842f351c6536ea
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
